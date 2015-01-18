@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  18 JAN 2015 21:27
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  18 JAN 2015 22:25
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -251,7 +251,7 @@ File: images/multiscreen-google.png Graphic file (type png)
 File: images/multi_usage2.png Graphic file (type png)
 
 <use images/multi_usage2.png>
-Overfull \hbox (12.9331pt too wide) in paragraph at lines 118--119
+Overfull \hbox (12.9331pt too wide) in paragraph at lines 119--120
  [][] 
  []
 
@@ -263,12 +263,12 @@ Overfull \hbox (12.9331pt too wide) in paragraph at lines 118--119
 File: images/nielsen-tv-viewing.png Graphic file (type png)
 
 <use images/nielsen-tv-viewing.png>
-Underfull \hbox (badness 5563) in paragraph at lines 175--175
+Underfull \hbox (badness 5563) in paragraph at lines 176--176
 [][]\T1/aer/m/n/9 All the source files used to gen-er-ate this ap-pli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 \T1/aer/m/n/9 ca-tion can be ac-cessed at the pub-lic repos-i-tory:
  []
 
@@ -277,37 +277,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--175
 File: images/old_nscreen_screenshot.png Graphic file (type png)
 
 <use images/old_nscreen_screenshot.png>
-Underfull \hbox (badness 1067) in paragraph at lines 180--180
+Underfull \hbox (badness 1067) in paragraph at lines 181--181
 []\T1/aer/bx/n/9 Figure 4: No-tube N-Screen screen-shot, source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \T1/aer/bx/n/9 code ob-tained from the pub-lic repos-i-tory
  []
 
 
-Overfull \hbox (5.82217pt too wide) in paragraph at lines 198--199
+Overfull \hbox (5.82217pt too wide) in paragraph at lines 199--200
 []\T1/aer/m/it/9 Requirements def-i-ni-tion\T1/aer/m/n/9 . Study of needs and c
 on-straints. 
  []
 
+
+Overfull \hbox (1.06949pt too wide) in paragraph at lines 201--202
+\T1/aer/m/n/9 soft-ware. De-bug-ging and op-ti-miza-tion. Graph-i-cal User
+ []
+
 [3 <./images/old_nscreen_screenshot.png>]
-Overfull \hbox (12.27437pt too wide) in paragraph at lines 241--242
+Overfull \hbox (12.27437pt too wide) in paragraph at lines 242--243
 []\T1/aer/m/n/9 Results in-ter-pre-ta-tion and con-clu-sions re-view. State-
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 254.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 255.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 [][]\T1/aer/m/n/9 https://notube3.wordpress.com/2011/10/10/n-screen-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \T1/aer/m/n/9 second-screen-application-for-small-group-exploration-of-
  []
 
@@ -315,17 +320,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--298
 File: images/recommender_tasks.png Graphic file (type png)
 
 <use images/recommender_tasks.png>
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 319--319
 [][]\T1/aer/m/n/9 https://notube3.wordpress.com/2011/12/12/preliminary-
  []
 
 [5 <./images/recommender_tasks.png (PNG copy)>] (./sigproc-sp.bbl) [6]
 (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 3606 strings out of 495061
- 53453 string characters out of 1182620
- 229959 words of memory out of 3000000
- 6720 multiletter control sequences out of 15000+50000
+ 3607 strings out of 495061
+ 53476 string characters out of 1182620
+ 228959 words of memory out of 3000000
+ 6721 multiletter control sequences out of 15000+50000
  54759 words of font info for 74 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  39i,10n,26p,1060b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -339,7 +344,7 @@ fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/
 fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (6 pages, 516994 bytes).
+Output written on sigproc-sp.pdf (6 pages, 517601 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
