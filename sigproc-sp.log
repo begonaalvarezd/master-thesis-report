@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  18 JAN 2015 16:49
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  18 JAN 2015 21:27
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -202,18 +202,18 @@ Package cleveref Info: loaded `english' language definitions on input line 3148
 ) (./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -228,108 +228,47 @@ LaTeX Font Info:    ... okay on input line 33.
 \MPnumerator=\count115
 \everyMPtoPDFconversion=\toks38
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Font Info:    Try loading font information for U+msa on input line 91.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 88.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 101.
-
 <images/multiscreen-google.png, id=1, 914.41624pt x 455.7025pt>
 File: images/multiscreen-google.png Graphic file (type png)
 
 <use images/multiscreen-google.png>
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 106.
-
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 106.
-
-
-LaTeX Warning: Citation `hritzuk2014multiscreen' on page \thepage  undefined on
- input line 111.
-
 <images/multi_usage2.png, id=2, 947.54pt x 502.87875pt>
 File: images/multi_usage2.png Graphic file (type png)
 
 <use images/multi_usage2.png>
-Overfull \hbox (12.9331pt too wide) in paragraph at lines 115--116
+Overfull \hbox (12.9331pt too wide) in paragraph at lines 118--119
  [][] 
  []
-
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 116.
-
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 116.
-
-
-LaTeX Warning: Citation `multiscreen:google' on page \thepage  undefined on inp
-ut line 120.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./images/multiscreen-google.png (PNG copy)> <./images/multi_usage2.png>]
-
-LaTeX Warning: Citation `microsoftcross' on page \thepage  undefined on input l
-ine 127.
-
 <images/nielsen-tv-viewing.png, id=17, 448.67625pt x 514.92375pt>
 File: images/nielsen-tv-viewing.png Graphic file (type png)
 
 <use images/nielsen-tv-viewing.png>
-
-LaTeX Warning: Citation `nielsentv' on page \thepage  undefined on input line 1
-43.
-
-
-LaTeX Warning: Citation `nielsentv' on page \thepage  undefined on input line 1
-43.
-
-
-LaTeX Warning: Citation `evolumedia2' on page \thepage  undefined on input line
- 152.
-
-
-LaTeX Warning: Citation `nielsentv' on page \thepage  undefined on input line 1
-54.
-
-
-LaTeX Warning: Citation `evolumedia1' on page \thepage  undefined on input line
- 156.
-
-
-LaTeX Warning: Citation `evolumedia1' on page \thepage  undefined on input line
- 156.
-
-
-LaTeX Warning: Citation `aroyo2009notube' on page \thepage  undefined on input 
-line 171.
-
-
-Underfull \hbox (badness 5563) in paragraph at lines 172--172
+Underfull \hbox (badness 5563) in paragraph at lines 175--175
 [][]\T1/aer/m/n/9 All the source files used to gen-er-ate this ap-pli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 \T1/aer/m/n/9 ca-tion can be ac-cessed at the pub-lic repos-i-tory:
  []
 
@@ -338,78 +277,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--172
 File: images/old_nscreen_screenshot.png Graphic file (type png)
 
 <use images/old_nscreen_screenshot.png>
-Underfull \hbox (badness 1067) in paragraph at lines 177--177
+Underfull \hbox (badness 1067) in paragraph at lines 180--180
 []\T1/aer/bx/n/9 Figure 4: No-tube N-Screen screen-shot, source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
 \T1/aer/bx/n/9 code ob-tained from the pub-lic repos-i-tory
  []
 
 
-LaTeX Warning: Citation `evolumedia1' on page \thepage  undefined on input line
- 187.
-
-
-Overfull \hbox (5.82217pt too wide) in paragraph at lines 195--196
+Overfull \hbox (5.82217pt too wide) in paragraph at lines 198--199
 []\T1/aer/m/it/9 Requirements def-i-ni-tion\T1/aer/m/n/9 . Study of needs and c
 on-straints. 
  []
 
 [3 <./images/old_nscreen_screenshot.png>]
-Overfull \hbox (12.27437pt too wide) in paragraph at lines 238--239
+Overfull \hbox (12.27437pt too wide) in paragraph at lines 241--242
 []\T1/aer/m/n/9 Results in-ter-pre-ta-tion and con-clu-sions re-view. State-
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 251.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 254.
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-
-LaTeX Warning: Citation `aroyo2009notube' on page \thepage  undefined on input 
-line 288.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 [][]\T1/aer/m/n/9 https://notube3.wordpress.com/2011/10/10/n-screen-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 \T1/aer/m/n/9 second-screen-application-for-small-group-exploration-of-
  []
 
+[4] <images/recommender_tasks.png, id=33, 255.95625pt x 356.33125pt>
+File: images/recommender_tasks.png Graphic file (type png)
 
-Overfull \hbox (1.62549pt too wide) in paragraph at lines 306--310
-\T1/aer/m/n/9 providers, con-tent se-lec-tion and deal-ing with the vast amount
-
+<use images/recommender_tasks.png>
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[][]\T1/aer/m/n/9 https://notube3.wordpress.com/2011/12/12/preliminary-
  []
 
-[4] (./sigproc-sp.bbl) [5] (./sigproc-sp.aux) ) 
+[5 <./images/recommender_tasks.png (PNG copy)>] (./sigproc-sp.bbl) [6]
+(./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 3595 strings out of 495061
- 53208 string characters out of 1182620
+ 3606 strings out of 495061
+ 53453 string characters out of 1182620
  229959 words of memory out of 3000000
- 6710 multiletter control sequences out of 15000+50000
+ 6720 multiletter control sequences out of 15000+50000
  54759 words of font info for 74 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,10n,26p,814b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/
-enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb
-></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texm
-f-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (5 pages, 498429 bytes).
+ 39i,10n,26p,1060b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/sha
+re/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/t
+imes/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (6 pages, 516994 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

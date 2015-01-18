@@ -1,46 +1,52 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: sigproc-sp.aux
-I found no \bibdata command---while reading file sigproc-sp.aux
-I found no \bibstyle command---while reading file sigproc-sp.aux
-You've used 7 entries,
-            0 wiz_defined-function locations,
-            90 strings with 594 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+The style file: abbrv.bst
+Database file #1: sigproc.bib
+Warning--empty journal in aroyo2009notube
+Warning--empty journal in evolumedia1
+Warning--empty journal in evolumedia2
+Warning--empty journal in microsoftcross
+Warning--empty institution in nielsentv
+Warning--empty journal in schopman2010notube
+You've used 10 entries,
+            2118 wiz_defined-function locations,
+            544 strings with 5548 characters,
+and the built_in function-call counts, 2835 in all, are:
+= -- 254
+> -- 180
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 74
+- -- 62
+* -- 193
+:= -- 532
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 16
+duplicate$ -- 99
+empty$ -- 182
+format.name$ -- 62
+if$ -- 541
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 10
+missing$ -- 9
+newline$ -- 53
+num.names$ -- 20
+pop$ -- 71
+preamble$ -- 1
+purify$ -- 50
 quote$ -- 0
-skip$ -- 0
+skip$ -- 68
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 77
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 38
+warning$ -- 6
+while$ -- 22
+width$ -- 12
+write$ -- 99
+(There were 6 warnings)

@@ -30,6 +30,9 @@
 
 \usepackage{url}
 \usepackage{wrapfig,lipsum,cleveref}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
 \begin{document}
 
 \title{Prototyping of a Browser-Based Social N-Screen Platform}
@@ -264,7 +267,7 @@ numbered and unnumbered headings will appear throughout the
 balance of this sample document.
 
 
-\section{N-Screen Apps: \\State-of-Art}
+\section{State-of-Art}
 Typically, the body of a paper is organized
 into a hierarchical structure, with numbered or unnumbered
 headings for sections, subsections, sub-subsections, and even
@@ -288,43 +291,37 @@ balance of this sample document.
 A model for the platform is defined in this chapter. Initially, the first version of the N-Screen developed by Notube\cite{aroyo2009notube} is evaluated to obtain some guidelines and potential improvements facing our own. The final software implementation requirements and constraints are defined. Finally, a discussion and evaluation over different features is carried out, exposing different options and some final conclusions in order to face a potential deployment to final users.
 \subsection{Browser-Based Social N-Screen Platform Model}
 
-Essentially, the BBSNSP\footnote{Browser-Based Social N-Screen Platform} scheme responds to second screen application based on a recommendation system. However, a further review shows some general differences:
+Essentially, the BBSNSP\footnote{Browser-Based Social N-Screen Platform} responds to second screen application based on a recommendation system. However, a further review shows some general differences:
 
 \begin{itemize}
   	\item [-]\textit{Browser-based}: instead of being developed as a mobile or computer app, the BBSNS is a web app. A \textit{web app} refers to software that runs on a web browser. This way, not only the app can be updated and maintained without disturbing potential users by requiring them to re-download. Additionally, it provides implicit support for cross-platform\footnote{\textit{Cross-platform} regards the capability of a software to run identically on different platforms.} compatibility. 
 	\item [-]\textit{Group decision recommendation system}. The recommendation feature is focused on 'how collaborating together might help people find something interesting to watch'\footnote{https://notube3.wordpress.com/2011/10/10/n-screen-a-second-screen-application-for-small-group-exploration-of-on-demand-content/}. It is designed to be used within a small group of friends in a collaboratively way to reach together a successful programme to watch. 
-	\item [-]\textit{Apart\footnote{different physical locations.}} group:   
-	\item [-]Back and front end integration. Source code
-debugging and improvement. 
+	\item [-]\textit{Apart\footnote{Different physical locations.} group oriented}: this BBSNS is mainly designed to watch together with other friends but being remotely located. 
+	\item [-]\textit{N-Screen}: It is not only oriented to be used as a secondary. It is considered that it might be used as a primary screen, secondary screen, or one of a screen devices collection. 
 \end{itemize}
 
+\subsection{First Browser-Based Social N-Screen Platform Review}
 
+The first BBSNSP was a project of Notube developed in 2011. It supposed a big step forward to get the Web and TV closer together using shared data models and content across multiple devices\cite{schopman2010notube}. It is designed to help deciding and enabling to interact using drag and drop over screen devices. It allowed to investigate  how helpful is group collaboration in order to find an interesting programme to watch, for limited group of users. It gave the strengths and weaknesses to establish the fundamentals for future developments.
 
-\section{Design Study}
+While constituting a successful platform meeting most of its features, the Notube BBSNSP introduced some issues found after its evaluation. This issues are following listed. 
 
+\rom{1}) As a recommender system, the platform is intended to be user based content oriented. User preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions\cite{libbyrecommender}. In Notube's platform, user interaction is treated as \textit{volatile} data, each time that the session is closed, the information is lost. This implementation impedes to exploit all this relevant information. Figure~\ref{fig:recomm} shows the 5 tasks that are intended to be accomplished by the recommendation engines in the client-side. If the platform lacks tracking of user interaction and preferences, it would not be possible to realize properly the first \textit{traing} step due to a lack of information.
 
-With the hundreds of channels available via modern TV
-providers, content selection and dealing with the vast amount
-of TV-related information become significant challenges for
-users. 
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/recommender_tasks.png, height=2in, width=1.5in}
+\caption{Recommender system tasks, obtained from \cite{libbyrecommender}}
+\label{fig:recomm}
+\end{figure}
 
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
+\rom{2}) Their own preliminary findings after the evaluation\footnote{https://notube3.wordpress.com/2011/12/12/preliminary-findings-of-n-screen-user-testing/} showed us a weak point. Notube results obtained after testing N-Screen with real users showed how some of them received a successful recommendation and indeed were wishing to watch later that specific selected programme. They received feedback such as ''Not for watching something instantly, only for making suggestions for things that could choose to watch later if you wanted to'' or ''I do not think it is on to recommend things for others to watch instantly''. This results revealed an interesting \textit{sequential usage} behaviour. In this case, instead of passing from one device to another, the user is making use of the same device time later to accomplish a task. Therefore, not only the volatile activity of the user, but also a lack of option to save wished programmes for a future moment, makes unlikely the activity to watch \textit{that programme later}. 
+
+\rom{3}) It is very important to offer an attractive set of possible activities for the user to interact with the \cite{skadberg2004visitors}. The only implicit offered interactions are the browsing and the suggestion part. For this reason, we found that Notube N-Screen slightly incomplete in terms of interactivity actions. 
+
+\rom{4}) The platform was designed to be not only a recommendation system, but also a place to watch a selected programme. There exist two different ways to realize this action: locally and remotely. 
+The first one is performed when a user decides to watch a programme individually. By contrast, the second one is conducted when a group decides to watch together a selected programme and the members are located in remote locations. This last visualization mode involves the execution of a browser-based 'virtual TV' in which every person within the group can watch simultaneously the same. Unfortunately,  this last feature was not working because the programme visualization part was missing. Making the virtual TV feature working is indeed necessary for a complete success of the platform. 
+
 
 \section{Implementation Study}
 Typically, the body of a paper is organized
