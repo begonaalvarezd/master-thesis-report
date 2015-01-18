@@ -1,0 +1,73 @@
+@ARTICLE{multiscreen:google,
+	author = {{Think With Google}},
+	journal = "Think Newsletter",
+ 	title =	"{The New Multi-Screen World: Understanding Cross-Platform Consumer Behavior}", 
+ 	howpublished =	{\url{https://ssl.gstatic.com/think/docs/the-new-multi-screen-world-study_research-studies.pdf}},
+	MONTH = "August",
+	YEAR = {2012}
+}
+
+@BOOK{hritzuk2014multiscreen,
+  title={Multiscreen Marketing: The Seven Things You Need to Know to Reach Your Customers Across TVs, Computers, Tablets, and Mobile Phones},
+  author={Hritzuk, Natasha and Jones, Kelly},
+  year={2014},
+  publisher={John Wiley \& Sons}
+}
+
+@ARTICLE{microsoftcross,
+	AUTHOR = {{Microsoft Advertising, Flamingo & Ipsos OTX}},
+	TITLE = "Cross-Screen Engagement: Multi-screen pathways reveal new opportunities for marketers to reach and engage consumers",
+	MONTH = "March",
+	YEAR = {2013}	
+}
+
+@inproceedings{courtois2012second,
+  title={Second screen applications and tablet users: constellation, awareness, experience, and interest},
+  author={Courtois, C{\'e}dric and D'heer, Evelien},
+  booktitle={Proceedings of the 10th European conference on Interactive tv and video},
+  pages={153--156},
+  year={2012},
+  organization={ACM}
+}
+
+@ARTICLE{evolumedia1,
+	AUTHOR = "Evolumedia Group & Canadian Media Fund",
+	TITLE = "The Second Screen and Television. White Paper Series Number 1. Overview and growth perspectives",
+	MONTH = "October",
+	YEAR = {2012}	
+}
+
+@ARTICLE{evolumedia2,
+	AUTHOR = "Evolumedia Group & Canadian Media Fund",
+	TITLE = "The Second Screen and Television. White Paper Series Number 2. Benefits & Impacts",
+	MONTH = "March",
+	YEAR = {2013}	
+}
+
+
+@ARTICLE{evolumedia3,
+	AUTHOR = "Evolumedia Group & Canadian Media Fund",
+	TITLE = "The Second Screen and Television. White Paper Series Number 3. Production & Deployment",
+	MONTH = "August",
+	YEAR = {2013}	
+}
+
+@TechReport{nielsentv,
+    author = {{Nielsen Holdings N.V.}},
+    title = {Action Figures: How Second Screens are Transforming TV Viewing},
+    month = "June",
+    year = {2013} 
+}
+
+@article{aroyo2009notube,
+  title={NoTube--making TV a medium for personalized interaction},
+  author={Aroyo, Lora and Conconi, Alex and Dietze, Stefan and Kaptein, Annelies and Nixon, Lyndon and Nufer, Christoph and Palmisano, Davide and Vignaroli, Luca and Yankova, Milena},
+  year={2009}
+}
+
+
+
+
+
+
+
