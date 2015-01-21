@@ -53,6 +53,40 @@
   emphstyle       =[1]\color{black},
   emph            =[2]{if,and,or,else},
   emphstyle       =[2]\color{dkyellow}}
+  
+%Fr JSON code
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
 \begin{document}
 
 \title{Prototyping of a Browser-Based Social N-Screen Platform}
@@ -343,7 +377,10 @@ While constituting a successful platform meeting most of its features, the Notub
 \rom{4}) The platform was designed to be not only a recommendation system, but also a place to watch a selected programme. There exist two different ways to realize this action: locally and remotely. 
 The first one is performed when a user decides to watch a programme individually. By contrast, the second one is conducted when a group decides to watch together a selected programme and the members are located in remote locations. This last visualization mode involves the execution of a browser-based 'virtual TV' in which every person within the group can watch simultaneously the same. Unfortunately,  this last feature was not working because the programme visualization part was missing. Making the virtual TV feature working is indeed necessary for a complete success of the platform. 
 
-\rom{5}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the welcome page was not simple and informative enough in order to not distract the user from the main screen attention. The welcome page lacked first sight relevant information, therefore it required more attention than actually needed. 
+\rom{5}) As mentioned before in this section, issue \rom{1}), the platform is designed to provide -future- recommendation strategies. For this purpose, its  structure design needs to be flexible and scalable to allow future recommendation scripts compatible in terms of data, in this case, a wide set of programmes. Following a deep study of the source code, we found and important bottleneck. The implementation was not flexible to face data content migrations. The programmes displayed, and all the logic behind it, were designed to correctly work just locally and with a limited flexibility range. It is not possible to afford heavy data as a wide set of programmes running locally due to memory limitations. 
+
+
+\rom{6}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the welcome page was not simple and informative enough in order to not distract the user from the main screen attention. The welcome page lacked first sight relevant information, therefore it required more attention than actually needed. 
 
 \section{Implementation Study}
 Once the first BBSNSP has been reviewed, it is moment to study how to settle every found issue and bottleneck exposed in Section \ref{firstNScreen} and start the implementation. The decisions regarding the implementation of new features are exposed. 
@@ -410,7 +447,7 @@ Table \texttt{content}. Column fields:
 
 For further details in terms of database fields definition, the following code (\texttt{mysql.sql}) shows in SQL code shows the tables initialization: 
 
-\begin{lstlisting}
+\begin{lstlisting}[language=json,firstnumber=1]
 CREATE TABLE IF NOT EXISTS `members` (
  `member_id` int(11) 
     unsigned NOT NULL AUTO_INCREMENT,
@@ -446,7 +483,7 @@ An important implementation to mention is that, in order to access to the person
 
 The following script (\texttt{auth.php}) shows this implementation:\footnote{\texttt{SESS\_MEMBER\_ID} is only initialized when the login authentication had been successful.}
 
-\begin{lstlisting}
+\begin{lstlisting}[language=json,firstnumber=1]
 <?php
 //Start session
 session_start();
@@ -469,7 +506,7 @@ It is severely important to understand how is the user behaviour when interactin
 
 Our simplest and effective solution to this situation\cite{krug2014don} has been the implementation of the possibility to add programmes to a personal '\textit{watch later}' list. This list is directly populated with the implicit user interaction of clicking a 'watch later' button. The list can be edited by the addition or removal of a programme. It is important to mention that each time the user edits this personal list, it is directly updated in the database making use of the PHP script \texttt{set\_channel.php}, which source code is as follows:
 
-\begin{lstlisting}
+\begin{lstlisting}[language=json,firstnumber=1]
 <?php
  //Start session
  session_start();
@@ -520,7 +557,7 @@ In order to keep improving the platform without distracting the user from the ma
 Social activities through the Web are becoming exponentially popular since the web encourages users to  participate socially active without even moving from their rooms\cite{schopman2010notube}. On the other hand, TV remains a largely passive experience that usually requires physical presence to become social in terms of simultaneous experience sharing, i.e. if you want to watch the same programme al the same time with a friend, you usually meet together in order to do it. For this reason, one of the most innovative and attractive features included in Notube N-Screen was the possibility to share a cross-platform 'virtual TV' in which every person within a group can watch simultaneously the same. Watching TV with faraway friends through a virtual living room.
 
 Unfortunately, as explained in \ref{firstNScreen} issue \rom{4}), this last feature was not working because the programme visualization part was missing. We decided that it was necessary to resuscitate the virtual television in order to achieve a successful platform. After long time studying the source code \texttt{player.html}, the bug was found. The problem was mainly residing in data compatibility and how \texttt{player.html} handled this data to enable a visualization. Further details concerning data structure are explained in section \ref{data}. The following \texttt{player.html} section of code shows how we handled the issue, replacing the local '\textit{manifest}'\footnote{The \textit{manifest} provides relevant  metadata for a specific programme such as video-url and video-format} extraction for a \texttt{http-request} in order to retrieve the manifest, and therefore, fixing the problem. 
-\begin{lstlisting}
+\begin{lstlisting}[language=json,firstnumber=1]
 $(document).bind('tv_changed', function (e,item) {
   console.log(item);
   var programme = item.nowp;
@@ -571,6 +608,61 @@ $(document).bind('tv_changed', function (e,item) {
 
 *******PONER IMAGENES QUE DEMUESTRAN EL FUNCIONAMIENTO DE LA REMOTE****
 \subsection{Content Data} \label{data}
+This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\footnote{The \textit{British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. This way, it is not needed to locally store the testing dataset but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained at the same time the platform total weight is severely reduced since it does not locally store any dataset. 
+
+In addition, it has been taking into account the possible data structure that the recommendation system may use as input. For this purpose, a deep study of data structure compatibility has been conducted to facilitate as much a possible future implementations carried out by recommendation engines researchers. Based on various data extraction APIs\footnote{An \textit{Application-Programming Interface} (API) is a set of programming instructions and standards for accessing a Web-based software application or Web tool.} such as the \textit{BBC Developers API}\footnote{https://developer.bbc.co.uk/} or the \textit{TED Talks Lab API}\footnote{http://developer.ted.com/API\_Docs}
+we decided to set up the following structure for every object contained in our N-Screen, as programmes or videos\footnote{Notice that it is a random example using a extracted TED Talks Video.}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+"pid":1000,
+"title":"Gero Miesenboeck: Re-engineering the brain",
+"description":"In the quest to map the brain, many scientists have attempted the incredibly daunting task of recording the activity of each neuron. Gero Miesenboeck works backward -- manipulating specific neurons to figure out exactly what they do, through a series of stunning experiments that reengineer the way fruit flies percieve light.",
+"date_time":"2010-11-03 22:44:00",
+"url":"http://download.ted.com/talks/GeroMiesenboeck_2010G-950k.mp4",
+"video":"http://download.ted.com/talks/GeroMiesenboeck_2010G-950k.mp4",
+"speaker":[
+{
+"speaker":{
+   "id":741,
+   "title":"",
+   "firstname":"Gero",
+   "middleinitial":"",
+   "lastname":"Miesenboeck",
+   "description":"Optogeneticist",
+   "whotheyare":"Using light and a little genetic engineering -- optogenetics -- Gero Miesenboeck has developed a way to control how living nerve cells work, and advanced understanding of how the brain controls behavior.",
+   "whylisten":"<p>Gero Miesenboeck is pioneering the field of optogenetics: genetically modifying nerve cells to respond to light. By flashing light at a modified neuron in a living nervous system, Miesenboeck and his collaborators can mimic a brain impulse -- and then study what happens next. Optogenetics will allow ever more precise experiments on living brains, allowing us to gather better evidence on how electrical impulses on tissue translate into actual behavior and thoughts...</p>",
+   "slug":"gero_miesenboeck",
+   "published_at":"2010-06-09 08:14:00",
+   "updated_at":"2010-11-04 15:11:51"
+}
+}
+],
+"image":"http://images.ted.com/images/ted/51f652b9ff6854867d1d7abb2683caf1d8dd22fb_240x180.jpg",
+"manifest":{
+"pid":1000,
+"id":1000,
+"title":"Gero Miesenboeck: Re-engineering the brain",
+"image":"http://images.ted.com/images/ted/51f652b9ff6854867d1d7abb2683caf1d8dd22fb_240x180.jpg",
+"provider":"ted",
+"duration":1750,
+"media":{
+"mp4":{
+   "uri":"http://download.ted.com/talks/GeroMiesenboeck_2010G-950k.mp4",
+   "is_live":"false"
+}
+},
+"type":"video/mp4"
+},
+"tags":{
+"biology":"biology",
+"brain":"brain",
+"neurology":"neurology",
+"science":"science"
+}
+},
+\end{lstlisting}
+
+It is important to mention that in order to present an attractive platform to interact with, a complete data migration has been implemented. Due to its 
 
 \subsection{Web Design}
 
