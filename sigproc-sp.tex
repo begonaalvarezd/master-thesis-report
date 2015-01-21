@@ -30,13 +30,33 @@
 
 \usepackage{url}
 \usepackage{wrapfig,lipsum,cleveref}
+
+% For roman numbers
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother
+% For PHP code
+\usepackage{listings,xcolor}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{airforceblue},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}}
 \begin{document}
 
 \title{Prototyping of a Browser-Based Social N-Screen Platform}
-\subtitle{[An Improvement of its User Experience]
+\subtitle{[Building Up to Boost User Experience]
 }
 %
 % You need the command \numberofauthors to handle the 'placement
@@ -186,20 +206,19 @@ It is developed following a \textit{user-centric approach}\footnote{Placing user
 
 \subsection{Goals}
 
-The main goal of the project is to re-design, implement and improve the functionallity, interactivity and user experience of the browser-based second screen platform\footnote{A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.} carried out by Notube, which is categorized as a social recommendation system. 
+The main goal of the project is to re-design, implement and improve the functionallity, interactivity and user experience of the browser-based second screen recommender platform\footnote{A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
 
 Most of the second screen apps in the market are not successfully developed because they are focused on enhance activities  that do not fulfil the real consumer needs\cite{evolumedia1}. Consequently, the audience engagement fails. This fact is crucial and it must be taken into account in order to make the platform valuable.
 
-Furthermore, the project must accomplish certain requirements for a potential release to final users. It needs to be developed offering user-based content, due to its recommendation feature. In addition, it is required to provide engaging content and interaction activities, as well as offering an intuitive appearance. Moreover, the platform must be flexible and scalable, so it will not need to be entirely redone with every particular change. Hence, it is needed to reach a complete solution covering all these features, overcoming the gaps and deficiencies that other platforms show.
+In addition, the platform must been design taking into account a possible future recommendation system integration. Furthermore, the project must accomplish certain requirements for a potential release to final users. It needs to be developed offering user-based content, due to its recommendation feature. It is required to provide engaging content and interaction activities, as well as offering an intuitive appearance. Moreover, the platform must be flexible and scalable, so it will not need to be entirely redone with every particular change. Hence, it is needed to reach a complete solution covering all these features, overcoming the gaps and deficiencies that other platforms show.
 
 Here, the main goal is fragmented into more specific subgoals:
 
 \begin{itemize}
   \item[-] \textit{Analysis of previous conclusions and results}. Study of already tested aspects. Definition of new tests to provide new data of interest. These data will help in making decisions about the implementation of interaction activities. 
   \item[-] \textit{Requirements definition}. Study of needs and constraints.
-  \item[-] \textit{Back-end design}. Global design of the new involved software. Debugging and optimization. 
-  \item[-] \textit{Front-end design}. Global design of the new involved software. Debugging and optimization. Graphical User Interface improvement. 
-  \item[-] \textit{Platform development}. Implementation and integration of both back and front end. Development of the final demo. 
+  \item[-] \textit{Software design}. Global design of the new involved software. Debugging and optimization.  
+  \item[-] \textit{Platform development}. Implementation and integration in order to achieve the development of the final demo. 
   \item[-] \textit{General purpose tests}. Tests oriented to prove the proper operation and verify
 the achievement of the requirements and constraints compliance.
   \item[-] \textit{Results analysis and conclusions}. Achievement evaluation. Study of weaknesses or possible improvements. Definition of further studies.
@@ -223,11 +242,12 @@ solutions.
   This phase covered from the first software definitions and  specifications, to the platform implementation until reaching a final demo. Goals:
 
   \begin{itemize}
-  	\item [-]Back-end design and implementation for required features.
-	\item [-]Front-end design and implementation for required features.
+  	\item [-]Software design and implementation for required features.
 	\item [-]Content dataset migration. 
-	\item [-]Back and front end integration. Source code
-debugging and improvement. 
+	\item [-]\textit{Alpha}-version deployment. Source code
+debugging and improvement.
+	\item [-]\textit{Beta}-version deployment. Source code
+debugging and improvement.  
   \end{itemize}
 	
   \item \textit{Tests and evaluation}. 
@@ -296,18 +316,18 @@ Essentially, the BBSNSP\footnote{Browser-Based Social N-Screen Platform} respond
 
 \begin{itemize}
   	\item [-]\textit{Browser-based}: instead of being developed as a mobile or computer app, the BBSNS is a web app. A \textit{web app} refers to software that runs on a web browser. This way, not only the app can be updated and maintained without disturbing potential users by requiring them to re-download. Additionally, it provides implicit support for cross-platform\footnote{\textit{Cross-platform} regards the capability of a software to run identically on different platforms.} compatibility. 
-	\item [-]\textit{Group decision recommendation system}. The recommendation feature is focused on 'how collaborating together might help people find something interesting to watch'\footnote{https://notube3.wordpress.com/2011/10/10/n-screen-a-second-screen-application-for-small-group-exploration-of-on-demand-content/}. It is designed to be used within a small group of friends in a collaboratively way to reach together a successful programme to watch. 
+	\item [-]\textit{Group decision recommendation system -Social-}. The recommendation feature is focused on 'how collaborating together might help people find something interesting to watch'\footnote{https://notube3.wordpress.com/2011/10/10/n-screen-a-second-screen-application-for-small-group-exploration-of-on-demand-content/}. It is designed to be used within a small group of friends in a collaboratively way to reach together a successful programme to watch. 
 	\item [-]\textit{Apart\footnote{Different physical locations.} group oriented}: this BBSNS is mainly designed to watch together with other friends but being remotely located. 
 	\item [-]\textit{N-Screen}: It is not only oriented to be used as a secondary. It is considered that it might be used as a primary screen, secondary screen, or one of a screen devices collection. 
 \end{itemize}
 
-\subsection{First Browser-Based Social N-Screen Platform Review}
+\subsection{First Browser-Based Social N-Screen Platform Review} \label{firstNScreen}
 
 The first BBSNSP was a project of Notube developed in 2011. It supposed a big step forward to get the Web and TV closer together using shared data models and content across multiple devices\cite{schopman2010notube}. It is designed to help deciding and enabling to interact using drag and drop over screen devices. It allowed to investigate  how helpful is group collaboration in order to find an interesting programme to watch, for limited group of users. It gave the strengths and weaknesses to establish the fundamentals for future developments.
 
 While constituting a successful platform meeting most of its features, the Notube BBSNSP introduced some issues found after its evaluation. This issues are following listed. 
 
-\rom{1}) As a recommender system, the platform is intended to be user based content oriented. User preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions\cite{libbyrecommender}. In Notube's platform, user interaction is treated as \textit{volatile} data, each time that the session is closed, the information is lost. This implementation impedes to exploit all this relevant information. Figure~\ref{fig:recomm} shows the 5 tasks that are intended to be accomplished by the recommendation engines in the client-side. If the platform lacks tracking of user interaction and preferences, it would not be possible to realize properly the first \textit{traing} step due to a lack of information.
+\rom{1}) As a recommender system, the platform is intended to be user based content oriented. User preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions\cite{libbyrecommender}. In Notube's platform, user interaction is treated as \textit{volatile} data, each time that the session is closed, the information is lost. This implementation impedes to exploit all this relevant information. Figure~\ref{fig:recomm} shows the 5 tasks that are intended to be accomplished by the recommendation engines in the client-side. If the platform lacks tracking the user interaction and preferences, it would not be possible to realize properly the first \textit{traing} step due to a shortcoming information.
 
 \begin{figure}[!htb]
 \centering
@@ -323,26 +343,242 @@ While constituting a successful platform meeting most of its features, the Notub
 \rom{4}) The platform was designed to be not only a recommendation system, but also a place to watch a selected programme. There exist two different ways to realize this action: locally and remotely. 
 The first one is performed when a user decides to watch a programme individually. By contrast, the second one is conducted when a group decides to watch together a selected programme and the members are located in remote locations. This last visualization mode involves the execution of a browser-based 'virtual TV' in which every person within the group can watch simultaneously the same. Unfortunately,  this last feature was not working because the programme visualization part was missing. Making the virtual TV feature working is indeed necessary for a complete success of the platform. 
 
-\rom{4}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the welcome page was not simple and informative enough in order to not distract the user from the main screen attention. The welcome page lacked first sight relevant information, therefore it required more attention than actually needed. 
+\rom{5}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the welcome page was not simple and informative enough in order to not distract the user from the main screen attention. The welcome page lacked first sight relevant information, therefore it required more attention than actually needed. 
 
 \section{Implementation Study}
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
+Once the first BBSNSP has been reviewed, it is moment to study how to settle every found issue and bottleneck exposed in Section \ref{firstNScreen} and start the implementation. The decisions regarding the implementation of new features are exposed. 
+
+\subsubsection{Localhost Deployment}
+
+Before being able to start programming the platform, it was required preparing the environment. 
+
+On the one hand, it was needed to set up a local server to be able to run and test our web application. We used XAMPP on a Linux distribution for this purpose, due to its multiple advantages and intuitiveness. XAMPP is an open source independent server platform which consists mainly of a MySQL database, Apache Web server and required interpreters for scripting languages as PHP and Perl. 
+
+On the other hand, the set-up required an Ejabberd installation to manage instant messages in order to enable automatic non-typed communication between remote users and allow them to collaborate -suggest-. Ejabberd is a Jabber/XMPP\footnote{\textit{Extensible Messaging and Presence Protocol}, better known as XMPP (formerly Jabber), is an open and extensible XML-based protocol originally designed for instant messaging.} server \cite{jia2010xmpp} which is realized in Erlang\footnote{Therefore, it was required also the Erlang packages installation for compilation} language. Its main functionality is that it works as an instant messaging server that allows more than one poeple to communicate and participate in real time, based on typed text or not. Additionally, considering that is intended to be used by a web application as part of a communication tool, it was necessary to enable BOSH in our Ejabberd server configuration. HTTP is synchronous providing simple call and response methods, discordant to XMPP's asynchronous event based protocol. Therefore, BOSH\footnote{Bidirectional-streams Over Synchronous HTTP} is a protocol that provided us a method to use XMPP in our platform by making http requests with a long time-out.
+
+After this preparation, the environment was therefore ready to start the implementation. 
+\subsection{Registration \& Login}
+
+The platform is intended to be used to test researches developed about recommendation strategies, therefore, it follows a user content based model. As explained in Section \ref{firstNScreen} issue \rom{1}), user preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions. In order to deal with the volatile data it was decided to implement a Registration \& Login system. This way, it is possible to tack user preferences and provide relevant data to the recommendation side. 
+
+An important step before implementing the registration system was to study different types of registration which we could offer. Due to the imminent growth of the social networks popularity such as Facebook\footnote{https://www.facebook.com/} \cite{shih2009facebook}, websites are currently offering two different options to accomplish a registration:
+
+\begin{itemize}
+  	\item [-]\textit{Good registration}: known as the one where a user fills in directly the registration form with their personal data. 
+	\item [-]\textit{OpenID}: OpenID Registation is an extension to the OpenID\footnote{OpenID is an interoperable authentication protocol designed to be safe, faster and easier way to log in to web sites} Authentication protocol that allows for very light-weight profile (mostly social networks profile, as Facebook or Twitter\footnote{https://www.twitter.com/}) exchange . It is designed to pass eight commonly requested pieces of information when an end user goes to register a new account with a web service. 
+\end{itemize}
+
+The OpenID provides an even faster registration than before. The '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
+
+
+The implementation for registration \& login has been carried out making use of:
+
+\begin{itemize}
+  	\item \textit{MySQL database}
+	\item \textit{Database handler scripts}: 
+	\begin{itemize}
+  		\item [-]HTML5 submit forms \& PHP for the good registration 
+		\item [-]Javascript Facebook SDK \& PHP for the OpenID registration 
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Database}
+
+The structure of our database has been changing as the platform evolved. At the end, intending to match every needed requirement, we reached the following schema based on two tables:
+
+Table \texttt{members}. Column fields:
+
+\begin{itemize}
+\item \texttt{member\_id}: Primary key\footnote{The \textit{primary key} of a relational table uniquely identifies each record in the table.}
+\item \texttt{firstname}: First Name
+\item \texttt{lastname}: Last Name
+\item \texttt{login}: Unique user-name
+\item \texttt{passwd}: MD5 encrypted\footnote{The \textit{MD5} message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number}
+\item \texttt{facebook\_id}: unique ID extracted from Facebook OpenID.
+\end{itemize}
+
+Table \texttt{content}. Column fields:
+
+\begin{itemize}
+\item \texttt{member\_id}: Primary key\footnote{The \textit{primary key} of a relational table uniquely identifies each record in the table.}
+\item \texttt{recommendations}: Personal recommendations list, JSON\footnote{\textit{JSON} (JavaScript Object Notation) is a lightweight format that is used for data interchanging} format.
+\item \texttt{recently\_viewed}: Recently viewed or watched programmes personal list, JSON format.
+\item \texttt{watch\_later}: Watch Later personal list, JSON format.
+\item \texttt{like\_dislike}: List containing personal likes and dislikes of the user, JSON format.
+\item \texttt{shared\_by\_friends}: List containing suggestions to the user made by members within his/her same group. 
+\end{itemize}
+
+For further details in terms of database fields definition, the following code (\texttt{mysql.sql}) shows in SQL code shows the tables initialization: 
+
+\begin{lstlisting}
+CREATE TABLE IF NOT EXISTS `members` (
+ `member_id` int(11) 
+    unsigned NOT NULL AUTO_INCREMENT,
+ `firstname` varchar(100) DEFAULT NULL,
+ `lastname` varchar(100) DEFAULT NULL,
+ `login` varchar(100) NOT NULL DEFAULT '',
+ `passwd` varchar(32) NOT NULL DEFAULT '',
+ `facebook_id` bigint(11) DEFAULT NULL,
+ PRIMARY KEY (`member_id`)
+) ENGINE=MyISAM  
+    DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `content` (
+ `member_id` int(11) 
+     NOT NULL AUTO_INCREMENT,
+ `recommendations` longtext NOT NULL,
+ `recently_viewed` longtext NOT NULL,
+ `watch_later` longtext NOT NULL,
+ `like_dislike` longtext NOT NULL,
+ `shared_by_friends` longtext NOT NULL,
+ PRIMARY KEY (`member_id`)
+) ENGINE=InnoDB  
+    DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+\end{lstlisting}
+
+Picture whatever shows how the content is initialize for each user the very first moment during the registration. 
+
+****INCLUDE AN IMAGE OF THE DATABASE STRUCTURE BEING POSTED BY REGISTRATION******
+
+\subsubsection{Login Security}
+
+An important implementation to mention is that, in order to access to the personal webpage after the login action, a security checking has been implemented. The access to the welcome page containing personal user-based content is only possible if the login has been correctly done, case in which the authentication \texttt{SESSION VARIABLES}\footnote{A\textit{Session Variable} is an associative array containing session variables available to the current script.} are set and authenticated. 
+
+The following script (\texttt{auth.php}) shows this implementation:\footnote{\texttt{SESS\_MEMBER\_ID} is only initialized when the login authentication had been successful.}
+
+\begin{lstlisting}
+<?php
+//Start session
+session_start();
+	
+//Check whether the session variable 
+//SESS_MEMBER_ID is present or not
+if(!isset($_SESSION['SESS_MEMBER_ID']) 
+  || (trim($_SESSION['SESS_MEMBER_ID'])=='')){
+  header("location:index.html");
+  exit();
+}
+?>
+\end{lstlisting}
+
+In addition, for localhost testing purposes, is been included a management of the browser cookies\footnote{A \textit{cookie} is a small piece of data sent from a website and stored in a user's web browser while the user is browsing that website.} to allow more than one sessions running simultaneously in the same browser.
+
+\subsection{Interaction Activities}
+\subsubsection{Watch Later} \label{watchlater}
+It is severely important to understand how is the user behaviour when interacting with a web service. Developers and designers work together to deploy a final product, but sometimes users can present unpredictable conduct and wishes\cite{norman2002design}. It is only after realizing tests on final users when the success or failure can be declared. Notube N-Screen, for example, was designed to be a second screen recommendation platform to watch immediately a selected programme. But after a evaluation with real users they found out how some users where wishing to watch that successful recommended programme not immediately, but in another later moment. This result revealed a very interesting \textit{sequential usage} behaviour in which users utilize the same platform -and sometimes the same device- but in separated moments to accomplish a task, in this case, watch the desired programme. The platform therefore showed a general successful feedback, but was lacking an important user conduct that was not taking into account at the beginning. 
+
+Our simplest and effective solution to this situation\cite{krug2014don} has been the implementation of the possibility to add programmes to a personal '\textit{watch later}' list. This list is directly populated with the implicit user interaction of clicking a 'watch later' button. The list can be edited by the addition or removal of a programme. It is important to mention that each time the user edits this personal list, it is directly updated in the database making use of the PHP script \texttt{set\_channel.php}, which source code is as follows:
+
+\begin{lstlisting}
+<?php
+ //Start session
+ session_start();
+ $data = mysql_escape_string($_POST['data']);
+ $channel = $_POST['channel'];
+ ini_set( 'default_charset', 'UTF-8' );
+	
+ //Include database connection details
+ require_once('config.php');
+
+ //Connect to mysql server
+ $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+ if(!$link) {
+  die(''Failed to connect to server:''.mysql_error());
+ }
+	
+ //Selecting database for the user
+ $db = mysql_select_db(DB_DATABASE);
+ if(!$db) {
+  die(''Unable to select database'');
+ }
+ $member_id = $_SESSION['SESS_MEMBER_ID'];
+
+ mysql_query(''UPDATE content SET $channel = 
+   '$data' WHERE member_id = '$member_id''');
+?>
+\end{lstlisting}
+
+****INCLUDE SCREENSHOT WATCH LATER ******
+
+\subsubsection{Like \& Dislike}
+As mentioned in Section \ref{firstNScreen} issue \rom{3}), we analysed Notube N-Screen and we found that the platform was missing interaction activities. The implementation of the Watch Later list explained in Section \ref{watchlater} is  actually an addition that improves this issue. Nevertheless, after a deep study we came to the result that just adding that feature was not enough. Based on the recommendation system that is going to be included afterwards, we converged to an idea to include the possibility to elicit user preferences by ranking a programme with a simple Like or Dislike action. 
+
+The idea came from the project developed by Vista-TV Sibyl\footnote{http://sibyl.prototyping.bbc.co.uk/}. Sibyl is a TV and radio programme recommender system designed for tablets and personal computers which uses a novel drag-and-drop system to extract user preferences. A user is able to express preferences by dragging individual programmes into 'like' and 'dislike' boxes. These preferences are immediately used by the client-side recommender to re-rank the programmes and refresh the recommendation list. Therefore, the implementation in N-Screen not only improves the user interaction, but also can be used to improve the recommendation strategy using directly relevant information provided by the user. 
+
+As well as with the case of the Watch Later list, likes and dislikes are directly populated with the implicit user interaction of clicking a button; simultaneously updating the database with PHP script \texttt{set\_channel.php}. 
+
+*****PONER IMAGEN DE LIKES AND DISLIKES*******
+
+\subsubsection{Hyperlink Metadata}
+
+In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlink\footnote{\textit{Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
+
+****PONER IMAGEN DE POSIBILIDAD DE CLICKAR METADATA****
+
+\subsection{Remote TV}
+
+Social activities through the Web are becoming exponentially popular since the web encourages users to  participate socially active without even moving from their rooms\cite{schopman2010notube}. On the other hand, TV remains a largely passive experience that usually requires physical presence to become social in terms of simultaneous experience sharing, i.e. if you want to watch the same programme al the same time with a friend, you usually meet together in order to do it. For this reason, one of the most innovative and attractive features included in Notube N-Screen was the possibility to share a cross-platform 'virtual TV' in which every person within a group can watch simultaneously the same. Watching TV with faraway friends through a virtual living room.
+
+Unfortunately, as explained in \ref{firstNScreen} issue \rom{4}), this last feature was not working because the programme visualization part was missing. We decided that it was necessary to resuscitate the virtual television in order to achieve a successful platform. After long time studying the source code \texttt{player.html}, the bug was found. The problem was mainly residing in data compatibility and how \texttt{player.html} handled this data to enable a visualization. Further details concerning data structure are explained in section \ref{data}. The following \texttt{player.html} section of code shows how we handled the issue, replacing the local '\textit{manifest}'\footnote{The \textit{manifest} provides relevant  metadata for a specific programme such as video-url and video-format} extraction for a \texttt{http-request} in order to retrieve the manifest, and therefore, fixing the problem. 
+\begin{lstlisting}
+$(document).bind('tv_changed', function (e,item) {
+  console.log(item);
+  var programme = item.nowp;
+  var id =  item.nowp.id;
+  me.nowp = item.nowp;
+  $("#title").html(programme["title"]);
+
+  var action = "Play";
+  if(programme && programme["action"]){
+        action = programme["action"];
+  }  
+  show_message(action+'ing'+programme["title"]);
+
+  if(action=="Play"){
+
+  $.ajax({
+    url: "get_tedtalks_by_id.php",
+    type: "POST",
+    async: false,
+    data: {id: id},
+    dataType: "json",
+    success: function (data) {
+      item =  changeData(data); 
+      //JSON with suggestions format
+      var manifest = item.suggestions[0].manifest;
+      process_manifest(manifest,programme);
+    }
+  });
+  // ---- PREVIOUS CODE -----
+  //pretty much everything should have a manifest
+    // var manifest = programme["manifest"];
+    // var manifest = item.manifest;
+    // if(manifest){
+    //   console.log("manifest is "+manifest);
+  
+    //     $.ajax({
+    //     url: manifest,
+    //     dataType: "json",
+    //     success: function(data){
+    //      process_manifest(data,programme);
+    //      }
+    //     }); 
+   }else{
+     alert(''no manifest'');
+   }
+});
+\end{lstlisting}
+
+*******PONER IMAGENES QUE DEMUESTRAN EL FUNCIONAMIENTO DE LA REMOTE****
+\subsection{Content Data} \label{data}
+
+\subsection{Web Design}
+
+\subsubsection{Welcome Page}
+
+\subsubsection{Selected Programme}
+
+\subsubsection{Call-to-action buttons}
 
 \section{Evaluation and Results}
 Typically, the body of a paper is organized

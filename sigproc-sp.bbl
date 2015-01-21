@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{allen2012smashing}
+J.~Allen and J.~Chudley.
+\newblock {\em Smashing UX design: Foundations for designing online user
+  experiences}, volume~34.
+\newblock John Wiley \& Sons, 2012.
+
 \bibitem{aroyo2009notube}
 L.~Aroyo, A.~Conconi, S.~Dietze, A.~Kaptein, L.~Nixon, C.~Nufer, D.~Palmisano,
   L.~Vignaroli, and M.~Yankova.
@@ -30,6 +36,17 @@ N.~Hritzuk and K.~Jones.
   Reach Your Customers Across TVs, Computers, Tablets, and Mobile Phones}.
 \newblock John Wiley \& Sons, 2014.
 
+\bibitem{jia2010xmpp}
+G.~Z.-h.~L. Jia-xi and W.~Jin.
+\newblock Xmpp-based ejabberd server privacy-list implementation.
+\newblock {\em Microcomputer Information}, 18:074, 2010.
+
+\bibitem{krug2014don}
+S.~Krug.
+\newblock Don’t make me think, revisited: A common sense approach to web (and
+  mobile) usability.
+\newblock {\em Berkley: New Riders}, 2014.
+
 \bibitem{microsoftcross}
 {Microsoft Advertising, Flamingo \& Ipsos OTX}.
 \newblock Cross-screen engagement: Multi-screen pathways reveal new
@@ -46,11 +63,28 @@ C.~Newell and L.~Miller.
 \newblock Action figures: How second screens are transforming tv viewing.
 \newblock Technical report, June 2013.
 
+\bibitem{norman2002design}
+D.~A. Norman.
+\newblock {\em The design of everyday things}.
+\newblock Basic books, 2002.
+
+\bibitem{pu2006trust}
+P.~Pu and L.~Chen.
+\newblock Trust building with explanation interfaces.
+\newblock In {\em Proceedings of the 11th international conference on
+  Intelligent user interfaces}, pages 93--100. ACM, 2006.
+
 \bibitem{schopman2010notube}
 B.~Schopman, D.~Brickly, L.~Aroyo, C.~van Aart, V.~Buser, R.~Siebes, L.~Nixon,
   L.~Miller, V.~Malaise, M.~Minno, et~al.
 \newblock Notube: making the web part of personalised tv.
 \newblock 2010.
+
+\bibitem{shih2009facebook}
+C.~Shih.
+\newblock {\em The Facebook era: Tapping online social networks to build better
+  products, reach new audiences, and sell more stuff}.
+\newblock Prentice Hall, 2009.
 
 \bibitem{skadberg2004visitors}
 Y.~X. Skadberg and J.~R. Kimmel.
