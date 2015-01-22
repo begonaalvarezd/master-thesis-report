@@ -23,6 +23,11 @@ M.~Cettolo, C.~Girardi, and M.~Federico.
 \newblock In {\em Proceedings of the 16th Conference of the European
   Association for Machine Translation (EAMT)}, pages 261--268, 2012.
 
+\bibitem{colborne2010simple}
+G.~Colborne.
+\newblock {\em Simple and usable web, mobile, and interaction design}.
+\newblock New Riders, 2010.
+
 \bibitem{w3c:ajax}
 W.~W.~W. Consortium.
 \newblock Ajax --- w3c.
@@ -168,6 +173,12 @@ Webopedia.
 \newblock Sdk --- webopedia.
 \newblock [Online, Available at
   \url{http://www.webopedia.com/TERM/S/SDK.html}].
+
+\bibitem{wiki:halo}
+Wikipedia.
+\newblock Halo effect --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; accessed 22-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=Halo_effect&oldid=638449052}].
 
 \bibitem{wiki:app}
 Wikipedia.

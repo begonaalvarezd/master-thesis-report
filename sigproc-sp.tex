@@ -288,9 +288,7 @@ debugging and improvement.
   At last, the final demo was evaluated and the results were analyzed. Goals:
   
   \begin{itemize}
-  	\item [-]Fully integrated back-end and front-end test.
-	\item [-]Interaction test.
-	\item [-]Graphical user interface test.
+  	\item [-]Technical Test.
 	\item [-]User experience test.
 	\item [-]Results interpretation and conclusions review. Statement of further studies and future development lines. Found problems evaluation.
   \end{itemize}
@@ -402,7 +400,12 @@ An important step before implementing the registration system was to study diffe
 \begin{itemize}
   	\item [-]\textit{Good registration}: known as the one where a user fills in directly the registration form with their personal data. 
 	\item [-]\textit{OpenID}: OpenID Registation is an extension to the OpenID\cite{w3c:openid}\footnote{'OpenID is an interoperable authentication protocol designed to be safe, faster and easier way to log in to web sites.'} Authentication protocol that allows for very light-weight profile (mostly social networks profile, as Facebook or Twitter\footnote{https://www.twitter.com/}) exchange . It is designed to pass eight commonly requested pieces of information when an end user goes to register a new account with a web service. 
-\end{itemize}
+\end{itemize}\begin{figure}[!htb]
+\centering
+\epsfig{file=images/recommender_tasks.png, height=2in, width=1.5in}
+\caption{Recommender system tasks, obtained from \cite{libbyrecommender}}
+\label{fig:recomm}
+\end{figure}
 
 The OpenID provides an even faster registration than before. This '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
 
@@ -550,6 +553,8 @@ As well as with the case of the Watch Later list, likes and dislikes are directl
 In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlin\cite{wiki:hyper}\footnote{\textit{'Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.'} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
 
 ****PONER IMAGEN DE POSIBILIDAD DE CLICKAR METADATA****
+
+\subsubsection{Random Selection}
 
 \subsection{Remote TV}
 
@@ -757,8 +762,7 @@ It is important to mention that in order to introduce an attractive platform to 
 \subsection{Web Design}
 While building a web platform, it is important to design how to improve its functionality and also its graphical interface. A wide set of studies \cite{allen2012smashing} show how a not only well-built website, but also well-designed can increase its user traffic, due to an improved user enjoyment. Nowadays a aesthetic design 
 can be even more influential in affecting user preferences 
-than traditional operational usability, since its effect seems to transcend the product and influence other judgements, known as the \textit{halo effect}\cite{de2006interaction}\cite{wiki:halo}\footnote{'The \textit{halo effect} is a cognitive bias in which an observer's overall impression of a person, company, brand, or product influences the observer's feelings and thoughts about that entity's character or properties'}. The halo effect consists 
-
+than traditional operational usability, since its effect seems to transcend the product and influence other judgements, known as the \textit{halo effect}\cite{de2006interaction}\cite{wiki:halo}\footnote{'The \textit{halo effect} is a cognitive bias in which an observer's overall impression of a person, company, brand, or product influences the observer's feelings and thoughts about that entity's character or properties'}. Concerning the halo effect, several studies \cite{de2006interaction} presented a correlation between the aesthetic factor of a graphical interface, its perceived usability and the final user satisfaction with that interactive system. 
 
 For this reason, an extensive part of this project has been focused in web design research and implementation in order to reach an improved user experience. 
 
@@ -767,31 +771,178 @@ Through previous subsections included in our Implementation Study, a list of sol
 \subsubsection{Home Page}
 Since the beginning of web pages, human-computer interaction has been an important factor concerning experience evaluations\cite{monk2004product}. Usability considerations played an important role and influence the way interactive systems are designed and developed\cite{green2003pleasure}. But determining user satisfaction, there have been a  fluctuation from functional fulfilment to how is the provided global experience\cite{de2006interaction}. How intuitive an interface is and how it looks is influencing the capability to engage users more than ever\cite{allen2012smashing}. Now users are demanding functionality, usability and aesthetics in order to generate affective responses. 
 
-For this reason, it is severely important trying to understand who are going to be the final users of an interactive service, where is it going to be used and how. Following this, we converge to a main aspect that the homepage demanded to accomplish due to its inherit second screen conduct: It needed to be easy to use in order to not distract the user from the main viewing experience, in our case, mostly in front of a TV; and at the same time meet aesthetic design to boost users engagement. We found that the homepage  was lacking first sight relevant information, therefore it required more attention than actually needed. 
+For this reason, it is severely important trying to understand who are going to be the final users of an interactive service, where is it going to be used and how. Following this, we converge to a main aspect that the homepage demanded to accomplish due to its inherit second screen conduct: It needed to be easy to use in order to not distract the user from the main viewing experience, in our case, mostly in front of a TV; and at the same time meet aesthetic design to boost users engagement. We found that the homepage  was lacking first sight relevant information, therefore it required more attention than actually needed. Furthermore, its aesthetics could be improved. Figure \ref{fig:oldhomepage} shows a screenshot of Notube N-Screen homepage. This homepage was showing, during first sight view, the set of different channels 'Recommendations for you', 'Recently Viewed', 'Search Results' and 'Shared by friends', but without providing any further details about them. 
 
-\cite{nielsen2002homepage}
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/old_nscreen_homepahe.png, height=2in, width=3.5in}
+\caption{Notube N-Screen Homepage}
+\label{fig:oldhomepage}
+\end{figure}
+
+Consequently, we decided to display the homepage providing further information meanwhile trying to not disturb the user\cite{colborne2010simple}\cite{krug2014don}\cite{norman2002design}. We opted following the homepage design of \texttt{http://nscreen.notu.be/ted/} due to its simplicity and at the same time its further information provided \cite{nielsen2002homepage}. Figure \ref{fig:newhomepage} shows the result of our implemented homepage. 
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/new_homepage.png, height=2in, width=3.5in}
+\caption{New N-Screen Homepage}
+\label{fig:newhomepage}
+\end{figure}
+
+Concerning channels replacement, the new design shows for every channel as 'Suggestions for you' or 'Shared by friends' a first sight view of five programmes -or less if the screen has a smaller size -. Furthermore, it has been added the possibility to view all the programmes contained with the addition of a clickable 'View All' next to the channel title. Figure \ref{fig:viewallzoom} shows this addition and Figure \ref{fig:viewallafter} shows the result after clicking 'View All' for one of the channels. 
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/view_all_possibility_zoom.png, height=2in, width=3.5in}
+\caption{View All Addition next to a Channel Title,New N-Screen Homepage}
+\label{fig:viewallzoom}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/viewallclick.png, height=2in, width=3.5in}
+\caption{Programmes Visualization after 'View All' click,New N-Screen}
+\label{fig:viewallafter}
+\end{figure}
+
+Every channel contained in the new N-Screen homepage -Suggestions for You, Shared By Friends, Recently Viewed, Watch Later, Likes and Dislikes - present the same design approach. 
+
+In addition, it has been implemented more design improvements concerning the homepage aesthetics. Most of the websites are currently showing information related to the user profile in the header at the right side\cite{colborne2010simple}\cite{krug2014don}\cite{norman2002design}. For this reason, the name of the user has been moved in the header from the left to the right side in order to maintain its placement customary. Moreover, the images places next to group number and members of the same group been redesigned, see Figure \ref{fig:roster}. 
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/roster.png, height=1in, width=1in}
+\caption{Images Redesign in Vertical-Right Bar,New N-Screen}
+\label{fig:roster}
+\end{figure}
+
 \subsubsection{Selected Programme}
 
-\subsubsection{Call-to-action buttons}
+One of the most tedious parts during the design has been re-designing the visualization of a selected programme. During this phase, aesthetics and usability have been the most important factors. It has been included a vertical-right interactive bar next to the programme default image, see Figure \ref{fig:selectedprogramme}. This bar contains a set of five icons: Watch Later, Like, Dislike, Shared by Friends and Recently Viewed. It is important to mention that three of this icons -Watch Later, Like and Dislike- are call-to-action icons, which means that if the user clicks on one of them, the programme will be automatically added to the personal list which name is that precise icon. It is important to mention that if a programme is contained in one of the personal lists, the icon will be automatically rendered to be displayed in a different colour, as reminder for the user, see Figure \ref{fig:colouredicons}. 
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/selected_programme.png, height=2in, width=3.5in}
+\caption{Select Programme Visualization,New N-Screen}
+\label{fig:selectedprogramme}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/colouredicons.png, height=1in, width=0.5in}
+\caption{Example of Coloured Icons,New N-Screen}
+\label{fig:colouredicons}
+\end{figure}
+
+Additionally, it has been added below a programme description an inline set of hyperlinked tags extracted for the programme metadata, see Figure \ref{fig:tags}. A user can click to a desired tag to explore further related programmes. Figure \ref{fig:tagsclick} show the visualization of this action. 
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/tags.png, height=0.5in, width=3in}
+\caption{Hyperlinked Tags,New N-Screen}
+\label{fig:tags}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\epsfig{file=images/tagsclick.png, height=2in, width=3.5in}
+\caption{Visualization of related programmes after the selection of a tag,New N-Screen}
+\label{fig:tagsclick}
+\end{figure}
+
+At last, it has been included a clickable selection of related programmes below its summary, placed on the 'More Like This' section. 
 
 \section{Evaluation and Results}
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
+Initially, some tests were applied to the final platform for the purpose of proving its
+proper functionality. The main features that make the platform valuable such as
+registration, personal lists updating, sharing to a faraway user and remote TV have been tested. Afterwards, when the functionalities were demonstrated to work, an evaluation of the user experience has been carried out. The descriptions of
+the tests and corresponding results are exposed in this section.
+
+\subsection{Technical Tests}
+This tests tried to prove that every functional part included in the source code was working. The test was carried out by ourselves and we tested the following features:
+
+\begin{itemize}
+  \item Registration 
+  \begin{itemize}
+  	\item [-]Username not already taken by another user
+  	\item [-]Double entering password
+  	\item [-]OpenID authorization
+  	\item [-]Database members table initialization
+  	\item [-]Database content table initialization
+  	\item [-]Cache
+  \end{itemize}
+  \item Login
+  \begin{itemize}
+  	\item [-]Username and corresponding password
+  	\item [-]OpenID authorization
+  	\item [-]Security
+  	\item [-]User personal row in database members table
+  	\item [-]User personal row in database content table
+  	\item [-]Database content table initialization
+  	\item [-]Cache
+  \end{itemize}
+  \item Homepage 
+  \begin{itemize}
+  	\item [-]Content
+  	\item [-]Channels - Personal Lists
+  	\item [-]View All
+  	\item [-]Shared by in Shared by Friends
+  	\item [-]Random Selection
+  	\item [-]User name
+  	\item [-]Group number
+  	\item [-]Group member names
+  	\item [-]Drag\&Drop
+  	\item [-]Virtual TV
+  \end{itemize}
+  \item Personal Lists Update
+  \begin{itemize}
+  	\item [-]Shared by Friends
+  	\item [-]Recently Viewed
+  	\item [-]Watch Later
+  	\item [-]Likes
+  	\item [-]Dislikes
+  \end{itemize}
+  \item Call-to-Action icons
+  \begin{itemize}
+  	\item [-]Watch Later
+  	\item [-]Like
+  	\item [-]Dislike
+  \end{itemize}
+  \item Non-Call-to-Action icons
+  \begin{itemize}
+  	\item [-]Shared by Friends
+  	\item [-]Recently Viewed
+  \end{itemize}
+  \item Faraway Programme Sharing to a Single User
+  \begin{itemize}
+  	\item [-]Unique notifications
+  	\item [-]Unique Shared by friends channel
+  \end{itemize}
+  \item Faraway Programme Sharing to a Group
+  \begin{itemize}
+  	\item [-]Group Notifications
+  	\item [-]Group Shared by friends channel
+  \end{itemize}
+  \item Programme selection
+  \begin{itemize}
+  	\item [-]Information displayed
+  	\item [-]Local play
+  	\item [-]Call-to-action icons
+  	\item [-]Tags
+  	\item [-]More Like this
+  \end{itemize}
+  \item Virtual TV
+  \begin{itemize}
+  	\item [-]Sharing
+  	\item [-]Play
+  \end{itemize}
+\end{itemize}
+
+After the test we ascertained that every part listed above was correctly working. 
+\subsection{User Experience Evaluation}
+To accomplish the success of our platform, it was necessary to consider testing its interface as 
+well. An interface is the intermediary between users and content. It helps the user to interpreter and guides them through different complexitties found on an interactive web system. ''The happy marriage of architecture and interface--of logical 
+structure and visual meaning--creates a cohesive user experience''\cite{fleming1998web}. 
 
 \section{Conclusions}
 This paragraph will end the body of this sample document.
