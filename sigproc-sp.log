@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  22 JAN 2015 19:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  22 JAN 2015 21:52
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -389,8 +389,14 @@ shows this im-ple-men-ta-tion:[]
  []
 
 
+Overfull \hbox (5.04707pt too wide) in paragraph at lines 503--504
+\T1/aer/m/n/9 than one ses-sions run-ning si-mul-ta-ne-ously in the same browse
+r. 
+ []
+
+
 Overfull \hbox (3.39072pt too wide) in paragraph at lines 507--508
-\T1/aer/m/n/9 times users can present un-pre-dictable con-duct and wishes[22].
+\T1/aer/m/n/9 times users can present un-pre-dictable con-duct and wishes[23].
  []
 
 
@@ -455,10 +461,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 815--815
 []\T1/aer/bx/n/9 Figure 11: Im-ages Re-design in Vertical-Right
  []
 
-[12 <./images/old_nscreen_homepahe.png> <./images/new_homepage.png (PNG copy)> 
-<./images/view_all_possibility_zoom.png (PNG copy)> <./images/viewallclick.png 
-(PNG copy)> <./images/roster.png (PNG copy)>]
-<images/selected_programme.png, id=65, 1220.56pt x 674.52pt>
+<images/selected_programme.png, id=61, 1220.56pt x 674.52pt>
 File: images/selected_programme.png Graphic file (type png)
 
 <use images/selected_programme.png>
@@ -466,10 +469,12 @@ Overfull \hbox (12.93555pt too wide) in paragraph at lines 825--826
  [][] 
  []
 
-<images/colouredicons.png, id=66, 161.60374pt x 383.4325pt>
+<images/colouredicons.png, id=62, 161.60374pt x 383.4325pt>
 File: images/colouredicons.png Graphic file (type png)
 
-<use images/colouredicons.png>
+<use images/colouredicons.png> [12 <./images/old_nscreen_homepahe.png> <./image
+s/new_homepage.png (PNG copy)> <./images/view_all_possibility_zoom.png (PNG cop
+y)> <./images/viewallclick.png (PNG copy)> <./images/roster.png (PNG copy)>]
 <images/tags.png, id=67, 451.6875pt x 54.2025pt>
 File: images/tags.png Graphic file (type png)
  <use images/tags.png>
@@ -483,18 +488,11 @@ Overfull \hbox (12.94116pt too wide) in paragraph at lines 848--849
 
 [13 <./images/selected_programme.png (PNG copy)> <./images/colouredicons.png (P
 NG copy)> <./images/tags.png (PNG copy)> <./images/tagsclick.png (PNG copy)>]
-
-LaTeX Warning: Citation `fleming1998web' on page \thepage  undefined on input l
-ine 945.
-
-(./sigproc-sp.bbl
+[14] (./sigproc-sp.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [15]
-(./sigproc-sp.aux)
+ [15])
+[16] (./sigproc-sp.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -502,7 +500,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5060 strings out of 495061
  63259 string characters out of 1182620
- 741166 words of memory out of 3000000
+ 736166 words of memory out of 3000000
  8144 multiletter control sequences out of 15000+50000
  54759 words of font info for 74 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
@@ -517,9 +515,9 @@ mf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
 lvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (15 pages, 2874867 bytes).
+Output written on sigproc-sp.pdf (16 pages, 2881493 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

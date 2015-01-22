@@ -500,7 +500,7 @@ if(!isset($_SESSION['SESS_MEMBER_ID'])
 ?>
 \end{lstlisting}
 
-In addition, for localhost testing purposes, it has been included a management of the browser cookies\cite{wiki:cookie}\footnote{'A \textit{cookie} is a small piece of data sent from a website and stored in a user's web browser while the user is browsing that website.'} to allow more than one sessions running simultaneously in the same browser.
+In addition, for localhost testing purposes, it has been included a management of the browser cache to allow more than one sessions running simultaneously in the same browser.
 
 \subsection{Interaction Activities}
 \subsubsection{Watch Later} \label{watchlater}
@@ -941,9 +941,47 @@ This tests tried to prove that every functional part included in the source code
 After the test we ascertained that every part listed above was correctly working. 
 \subsection{User Experience Evaluation}
 To accomplish the success of our platform, it was necessary to consider testing its interface as 
-well. An interface is the intermediary between users and content. It helps the user to interpreter and guides them through different complexitties found on an interactive web system. ''The happy marriage of architecture and interface--of logical 
-structure and visual meaning--creates a cohesive user experience''\cite{fleming1998web}. 
+well. An interface is the intermediary between users and content. It guides them through different complexities found on an interactive web system. ''The happy marriage of architecture and interface--of logical structure and visual meaning--creates a cohesive user experience''\cite{fleming1998web}. 
 
+In order to test this important part of the platform, we carried out a user experience (UX) evaluation in order to extract how users feel during the interaction. For this purpose, we recruited 5 participants: three women and two man across a spread of ages between 20 and 31. All participants descriped themselves as screen devices enthusiasts, regulary spending at least 2 leisure hours a day in front of a screen. 
+
+Following some introductory context about our N-Screen in general, during each session we showed the participants our own version of N-Screen, containing a set of videos provided by TED Talks API, and we walked them through a group.watching scenario -with the author of this report taking the role of the participant's N-Screen 'friend'-. 
+
+During the evaluation, we asked the participant to think out loud to extract their thoughts and feelings about our own N-Screen. The results of this evaluation are exposed in the following subsections. 
+
+\subsubsection{Registration \& Login}
+
+Each participant was required to sign up in our platform. Concerning the registration activity, all participants except one did not give importance to this step. This one participant required to be able to get into the platform without registration and sign up afterwards, if wanted. In addition, three participants selected the OpenID registration explaining that the one-click was actually much easier. Contrary, one of the participants selected the good registration due to lacking Facebook account. At last, the resting participant selected the good registration claiming a distrust sharing a personal social network profile.  
+
+After registration, we required to every participant to sign in in order to test how intuitive was this process, since the registration pop-up appears before the log in option. No one showed any trouble to login.
+
+\subsubsection{Homepage}
+
+Each participant in an N-Screen group starts with a different set of personalised programme recommendations, and a set of empty personal lists -since they interaction just started-. We had to ask our participants to imagine these were based on their user profile. Despite this, all the participants liked the concept of seeing programme suggestions based on their own preferences.
+
+All participants showed an enthusiastic feedback about the homepage. The display of a short set of videos below each channel was for them very informative and non disturbing. 
+
+Additionally, tapping on a programme in our N-Screen displays an overlay with a brief programme synopsis with clickable tags, play button, a vertical bar containing call-to-action icons and a set of programmes related to the selected one. All participants showed a positive reaction to this overlay, considering it with the precise information needed. We asked the participants to try to interact with the programme overlay, and all of them found out easily that 'Watch Later', 'Like' and 'Dislike' buttons where clickable and concerned an updating of their personal lists, and also all of them realised that 'Shared by Friends' and 'Recently Viewed' were static buttons automatically rendered by the platform. Concerning the hyperlink metadata, all participants figured out that they were also clickable and were appreciative about them, showing videos related to a specific tag was very useful for everyone.  In addition, the play button was intuitive for every participant.  
+
+It is important to mention that every participant except one exposed a comment without being asked about the random selection. They found this possibility definitely useful, since sometimes it is preferable to watch something totally non-related to own preferences and therefore find something new. 
+
+A special test that we carried out was to ask to every participant to go back to home page if they were out of it. Every participant found out by themselves that there was a clickable button placed in the footer with the word HOME that could drive them there. 
+
+At last, one of the participants showed disappointment with the navigation on the home page, preferring to be horizontally static and just allowing to scroll vertically. 
+\subsubsection{Sharing \& Virtual TV}
+ 
+During this phase of the test, we asked to all participants to share a program. One of the participants did not manage to accomplish it without a hint, three participants did it without trouble, and impressively the resting one starting sharing without even being asked to it, so for this last one was incredibly intuitive. 
+
+Additionally, any problem to open the Virtual TV and drag \& drop something to it was showed, this last one since the previous phase provided a hint to accomplish the TV sharing.
+
+All participants were very enthusiastic about the Virtual TV and found this featured extremely useful and innovative. ç
+
+\subsubsection{General Overview}
+
+At the end of the evaluation with every participant, we asked them how was their general feeling about the platform, how intuitive it was and also its aesthetic. Every participant shared a positive reaction after this questions, explaining that it was generally intuitive and also with a beautiful non disturbing minimalistic interface.  
+
+\subsubsection{Results}
+After the evaluation with final users, 
 \section{Conclusions}
 This paragraph will end the body of this sample document.
 Remember that you might still have Acknowledgments or
