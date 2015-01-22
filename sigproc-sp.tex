@@ -29,7 +29,7 @@
 \documentclass{acm_proc_article-sp}
 
 \usepackage{url}
-\usepackage{wrapfig,lipsum,cleveref}
+\usepackage{wrapfig,lipsum}
 
 % For roman numbers
 \makeatletter
@@ -62,7 +62,6 @@
 
 \lstdefinelanguage{json}{
     basicstyle=\normalfont\ttfamily,
-    numbers=left,
     numberstyle=\scriptsize,
     stepnumber=1,
     numbersep=8pt,
@@ -175,7 +174,7 @@ Following this scenario comes the necessity to understand how users interact wit
 	\label{fig:simultaneous}
 \end{figure}
 
-A Google study developed in 2012 \cite{multiscreen:google} exposed how an average consumer makes use of companion devices - smartphone, TV, tablet and laptop - during simultaneous\footnote{Usage for either related or unrelated activities.} usage - See Figure ~\ref{fig:simultaneous}. There are three main multi-screen combinations:
+A Google study developed in 2012 \cite{multiscreen:google} exposed how an average consumer makes use of companion devices - smartphone, TV, tablet and laptop - during simultaneous\footnote{Usage for either related or unrelated activities.} usage - See Figure \ref{fig:simultaneous}. There are three main multi-screen combinations:
 \begin{itemize}
   \item[-] Smartphone + TV\hspace{1.35cm}- 81\% 
   \item[-] Smartphone + Laptop/PC \hspace{0.1cm}- 66\% 
@@ -193,7 +192,7 @@ From now on, we will focus our attention in simultaneous usage for \textit{relat
  	
 \subsubsection{Second Screens}
 
-One of our everyday routines that has been altered by this new screen multitasking\footnote{\textit{Human multitasking} is the apparent performance by an individual of handling more than one task at the same time.} behaviour is that moment while a user watches TV. Viewers no longer focus their entire attention to the TV screen but share it with portable devices. 
+One of our everyday routines that has been altered by this new screen multitasking\cite{wiki:multitask}\footnote{\textit{'Human multitasking} is the apparent performance by an individual of handling more than one task at the same time.'} behaviour is that moment while a user watches TV. Viewers no longer focus their entire attention to the TV screen but share it with portable devices. 
 
 \begin{figure}[!htb]
 	\centering
@@ -202,14 +201,14 @@ One of our everyday routines that has been altered by this new screen multitaski
 	\label{fig:nielsengraph}
 \end{figure}
 
-Figure ~\ref{fig:nielsengraph} illustrates how consumers make use of their tablets and smartphones while watching TV. We can observe how indeed users not only surf on the web, but they interact with the device with activities directly related to the program or advertisement that they are watching at that moment. This demonstrates the fact that consumers are not merely interacting with their hand devices as a simple distraction, but sometimes in order to improve their TV content consumption. 
+Figure \ref{fig:nielsengraph} illustrates how consumers make use of their tablets and smartphones while watching TV. We can observe how indeed users not only surf on the web, but they interact with the device with activities directly related to the program or advertisement that they are watching at that moment. This demonstrates the fact that consumers are not merely interacting with their hand devices as a simple distraction, but sometimes in order to improve their TV content consumption. 
 
 This new practice has led to the creation of the new concept \textit{second screen}. Second screen is a hand-device which is susceptible to provide added value to the TV content consumption. These devices such as tablets or smartphones play a role as companion
 screens that 'connect' viewers to complementary interaction
 opportunities while they watch TV via applications, additional
 show-oriented content or in-synch functionalities \cite{evolumedia2}. 
 
-This new activity has become such important that a survey developed by Nielsen Holdings N.V. \cite{nielsentv} reported 'Using a tablet or smartphone while watching TV is more common than not'. Nearly half of tablet owners - 43\%- and smartphone owners - 46\% - declared that while watching TV they are making use of their devices as second screen every day. As a consequence of this fact, there are emerging new apps\footnote{\textit{App} is an abbreviation for application. An app is a piece of software. It can run on the Internet, on a computer, on a phone or other electronic device.} which take advantage offering second screen experiences that can improve even more this interactivity while watching TV. 
+This new activity has become such important that a survey developed by Nielsen Holdings N.V. \cite{nielsentv} reported 'Using a tablet or smartphone while watching TV is more common than not'. Nearly half of tablet owners - 43\%- and smartphone owners - 46\% - declared that while watching TV they are making use of their devices as second screen every day. As a consequence of this fact, there are emerging new apps\cite{wiki:app}\footnote{\textit{'App} is an abbreviation for application. An app is a piece of software. It can run on the Internet, on a computer, on a phone or other electronic device.'} which take advantage offering second screen experiences that can improve even more this interactivity while watching TV. 
 
 Second screen apps \cite{evolumedia1} are intended to enable viewers to interact before, during and after the broadcast of a programme using a laptop, smartphone or tablet. The most competent apps, instead of distract, have the potential to increase the viewers' attention and enjoyment on the watching programme. According to \cite{evolumedia1}, eight types are distinguished in order to categorize these apps based on their functionalities: 
 \begin{itemize}
@@ -226,7 +225,7 @@ On that account, second screen apps arised as a manner to unlock new research an
 
 \subsubsection{Use case}
 
-This project is based on an already existing platform developed by \textbf{Notube}\cite{aroyo2009notube}. Notube, is a project funded on 2009 that was specialized in second screens and Web merging. Their motivation was getting the Web and TV closer together via shared data models and content across multiple devices. They developed their own N-Screen\footnote{\textit{N-Screen} because it might be the primary screen, or one of a bunch of equals.} prototype, a Web browser-based\footnote{\textit{Browser-based} refers to computer tools and applications which run on a web browser via the Internet without accessing the operating system of any individual computer. These applications are accessed through web pages and can be used by people who are prevented from downloading software applications by firewalls.} second screen application\footnote{All the source files used to generate this application can be accessed at the public repository:
+This project is based on an already existing platform developed by \textbf{Notube}\cite{aroyo2009notube}. Notube, is a project funded on 2009 that was specialized in second screens and Web merging. Their motivation was getting the Web and TV closer together via shared data models and content across multiple devices. They developed their own N-Screen\footnote{\textit{N-Screen} because it might be the primary screen, or one of a bunch of equals.} prototype, a Web browser-based\cite{business:bb}\footnote{\textit{'Browser-based} refers to computer tools and applications which run on a web browser via the Internet without accessing the operating system of any individual computer. These applications are accessed through web pages and can be used by people who are prevented from downloading software applications by firewalls.'} second screen application\footnote{All the source files used to generate this application can be accessed at the public repository:
 \textit{https://github.com/notube/n-screen}} for small group exploration of on-demand content, both in the same room and remotely, with each individual having their own second screen device. It integrates different combinations of recommendation strategies and allows to decide within a closed group to watch a selected program sharing a 'virtual television', that in their case is the hand device itself. 
 
 \begin{figure}[!htb]
@@ -240,7 +239,7 @@ It is developed following a \textit{user-centric approach}\footnote{Placing user
 
 \subsection{Goals}
 
-The main goal of the project is to re-design, implement and improve the functionallity, interactivity and user experience of the browser-based second screen recommender platform\footnote{A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
+The main goal of the project is to re-design, implement and improve the functionallity, interactivity and user experience of the browser-based second screen recommender platform\cite{tech:platform}\footnote{'A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.'} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
 
 Most of the second screen apps in the market are not successfully developed because they are focused on enhance activities  that do not fulfil the real consumer needs\cite{evolumedia1}. Consequently, the audience engagement fails. This fact is crucial and it must be taken into account in order to make the platform valuable.
 
@@ -349,7 +348,7 @@ A model for the platform is defined in this chapter. Initially, the first versio
 Essentially, the BBSNSP\footnote{Browser-Based Social N-Screen Platform} responds to a second screen application based on a recommendation system. However, a further review shows some general differences:
 
 \begin{itemize}
-  	\item [-]\textit{Browser-based}: instead of being developed as a mobile or computer app, the BBSNS is a web app. A \textit{web app} refers to software that runs on a web browser. This way, not only the app can be updated and maintained without disturbing potential users by requiring them to re-download. Additionally, it provides implicit support for cross-platform\footnote{\textit{Cross-platform} regards the capability of a software to run identically on different platforms.} compatibility. 
+  	\item [-]\textit{Browser-based}: instead of being developed as a mobile or computer app, the BBSNS is a web app. A \textit{web app} refers to software that runs on a web browser. This way, not only the app can be updated and maintained without disturbing potential users by requiring them to re-download. Additionally, it provides implicit support for cross-platform\cite{web:cp}\footnote{\textit{'Cross-platform} regards the capability of a software to run identically on different platforms.'} compatibility. 
 	\item [-]\textit{Group decision recommendation system -Social-}. The recommendation feature is focused on 'how collaborating together might help people find something interesting to watch'\footnote{https://notube3.wordpress.com/2011/10/10/n-screen-a-second-screen-application-for-small-group-exploration-of-on-demand-content/}. It is designed to be used within a small group of friends in a collaboratively way to reach together a successful programme to watch. 
 	\item [-]\textit{Apart\footnote{Different physical locations.} group oriented}: this BBSNS is mainly designed to watch together with other friends but being remotely located. 
 	\item [-]\textit{N-Screen}: It is not only oriented to be used as a secondary. It is considered that it might be used as a primary screen, secondary screen, or one of a screen devices collection. 
@@ -361,7 +360,7 @@ The first BBSNSP was a project of Notube developed in 2011. It supposed a big st
 
 While constituting a successful platform meeting most of its features, the Notube BBSNSP introduced some issues found after its evaluation. This issues are following listed. 
 
-\rom{1}) As a recommender system, the platform is intended to be user based content oriented. User preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions\cite{libbyrecommender}. In Notube's platform, user interaction is treated as \textit{volatile} data, each time that the session is closed, the information is lost. This implementation impedes to exploit all this relevant information. Figure~\ref{fig:recomm} shows the 5 tasks that are intended to be accomplished by the recommendation engines in the client-side. If the platform lacks tracking the user interaction and preferences, it would not be possible to realize properly the first \textit{traing} step due to a shortcoming information.
+\rom{1}) As a recommender system, the platform is intended to be user based content oriented. User preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions\cite{libbyrecommender}. In Notube's platform, user interaction is treated as \textit{volatile} data, each time that the session is closed, the information is lost. This implementation impedes to exploit all this relevant information. Figure\ref{fig:recomm} shows the 5 tasks that are intended to be accomplished by the recommendation engines in the client-side. If the platform lacks tracking the user interaction and preferences, it would not be possible to realize properly the first \textit{traing} step due to a shortcoming information.
 
 \begin{figure}[!htb]
 \centering
@@ -380,7 +379,7 @@ The first one is performed when a user decides to watch a programme individually
 \rom{5}) As mentioned before in this section, issue \rom{1}), the platform is designed to provide -future- recommendation strategies. For this purpose, its  structure design needs to be flexible and scalable to allow future recommendation scripts compatible in terms of data, in this case, a wide set of programmes. Following a deep study of the source code, we found and important bottleneck. The implementation was not flexible to face data content migrations. The programmes displayed, and all the logic behind it, were designed to correctly work just locally and with a limited flexibility range. It is not possible to afford heavy data as a wide set of programmes running locally due to memory limitations. 
 
 
-\rom{6}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the welcome page was not simple and informative enough in order to not distract the user from the main screen attention. The welcome page lacked first sight relevant information, therefore it required more attention than actually needed. 
+\rom{6}) The inherit second screen behaviour of the platform makes strongly important to take into account that higher complex interaction in this type of environments is a determinative factor \cite{cruickshank2007making}, since involves a multi-tasking activity. We found that the homepage was not simple while informative enough in order to not distract the user from the main screen attention. It lacked first sight relevant information, therefore it required more attention than actually needed. 
 
 \section{Implementation Study}
 Once the first BBSNSP has been reviewed, it is moment to study how to settle every found issue and bottleneck exposed in Section \ref{firstNScreen} and start the implementation. The decisions regarding the implementation of new features are exposed. 
@@ -391,7 +390,7 @@ Before being able to start programming the platform, it was required preparing t
 
 On the one hand, it was needed to set up a local server to be able to run and test our web application. We used XAMPP on a Linux distribution for this purpose, due to its multiple advantages and intuitiveness. XAMPP is an open source independent server platform which consists mainly of a MySQL database, Apache Web server and required interpreters for scripting languages as PHP and Perl. 
 
-On the other hand, the set-up required an Ejabberd installation to manage instant messages in order to enable automatic non-typed communication between remote users and allow them to collaborate -suggest-. Ejabberd is a Jabber/XMPP\footnote{\textit{Extensible Messaging and Presence Protocol}, better known as XMPP (formerly Jabber), is an open and extensible XML-based protocol originally designed for instant messaging.} server \cite{jia2010xmpp} which is realized in Erlang\footnote{Therefore, it was required also the Erlang packages installation for compilation} language. Its main functionality is that it works as an instant messaging server that allows more than one poeple to communicate and participate in real time, based on typed text or not. Additionally, considering that is intended to be used by a web application as part of a communication tool, it was necessary to enable BOSH in our Ejabberd server configuration. HTTP is synchronous providing simple call and response methods, discordant to XMPP's asynchronous event based protocol. Therefore, BOSH\footnote{Bidirectional-streams Over Synchronous HTTP} is a protocol that provided us a method to use XMPP in our platform by making http requests with a long time-out.
+On the other hand, the set-up required an Ejabberd installation to manage instant messages in order to enable automatic non-typed communication between remote users and allow them to collaborate -suggest-. Ejabberd is a Jabber/XMPP\cite{wiki:xmpp}\footnote{\textit{'Extensible Messaging and Presence Protocol}, better known as XMPP (formerly Jabber), is an open and extensible XML-based protocol originally designed for instant messaging.'} server \cite{jia2010xmpp} which is realized in Erlang\footnote{Therefore, it was required also the Erlang packages installation for compilation} language. Its main functionality is that it works as an instant messaging server that allows more than one poeple to communicate and participate in real time, based on typed text or not. Additionally, considering that is intended to be used by a web application as part of a communication tool, it was necessary to enable BOSH in our Ejabberd server configuration. HTTP is synchronous providing simple call and response methods, discordant to XMPP's asynchronous event based protocol. Therefore, BOSH\footnote{Bidirectional-streams Over Synchronous HTTP} is a protocol that provided us a method to use XMPP in our platform by making http requests with a long time-out.
 
 After this preparation, the environment was therefore ready to start the implementation. 
 \subsection{Registration \& Login}
@@ -402,10 +401,10 @@ An important step before implementing the registration system was to study diffe
 
 \begin{itemize}
   	\item [-]\textit{Good registration}: known as the one where a user fills in directly the registration form with their personal data. 
-	\item [-]\textit{OpenID}: OpenID Registation is an extension to the OpenID\footnote{OpenID is an interoperable authentication protocol designed to be safe, faster and easier way to log in to web sites} Authentication protocol that allows for very light-weight profile (mostly social networks profile, as Facebook or Twitter\footnote{https://www.twitter.com/}) exchange . It is designed to pass eight commonly requested pieces of information when an end user goes to register a new account with a web service. 
+	\item [-]\textit{OpenID}: OpenID Registation is an extension to the OpenID\cite{w3c:openid}\footnote{'OpenID is an interoperable authentication protocol designed to be safe, faster and easier way to log in to web sites.'} Authentication protocol that allows for very light-weight profile (mostly social networks profile, as Facebook or Twitter\footnote{https://www.twitter.com/}) exchange . It is designed to pass eight commonly requested pieces of information when an end user goes to register a new account with a web service. 
 \end{itemize}
 
-The OpenID provides an even faster registration than before. The '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
+The OpenID provides an even faster registration than before. This '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
 
 
 The implementation for registration \& login has been carried out making use of:
@@ -415,7 +414,7 @@ The implementation for registration \& login has been carried out making use of:
 	\item \textit{Database handler scripts}: 
 	\begin{itemize}
   		\item [-]HTML5 submit forms \& PHP for the good registration 
-		\item [-]Javascript Facebook SDK \& PHP for the OpenID registration 
+		\item [-]Javascript Facebook SDK\cite{web:sdk}\footnote{\textit{'Software Development Kit} (SDK) refers to a programming package that enables a programmer to develop applications for a specific platform.'} \& PHP for the OpenID registration 
 	\end{itemize}
 \end{itemize}
 
@@ -430,7 +429,7 @@ Table \texttt{members}. Column fields:
 \item \texttt{firstname}: First Name
 \item \texttt{lastname}: Last Name
 \item \texttt{login}: Unique user-name
-\item \texttt{passwd}: MD5 encrypted\footnote{The \textit{MD5} message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number}
+\item \texttt{passwd}: MD5 encrypted\cite{wiki:md5}\footnote{'The \textit{MD5} message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number.'}
 \item \texttt{facebook\_id}: unique ID extracted from Facebook OpenID.
 \end{itemize}
 
@@ -438,14 +437,14 @@ Table \texttt{content}. Column fields:
 
 \begin{itemize}
 \item \texttt{member\_id}: Primary key\footnote{The \textit{primary key} of a relational table uniquely identifies each record in the table.}
-\item \texttt{recommendations}: Personal recommendations list, JSON\footnote{\textit{JSON} (JavaScript Object Notation) is a lightweight format that is used for data interchanging} format.
+\item \texttt{recommendations}: Personal recommendations list, JSON\footnote{\textit{'JSON} (JavaScript Object Notation) is a lightweight format that is used for data interchanging.'} format.
 \item \texttt{recently\_viewed}: Recently viewed or watched programmes personal list, JSON format.
 \item \texttt{watch\_later}: Watch Later personal list, JSON format.
 \item \texttt{like\_dislike}: List containing personal likes and dislikes of the user, JSON format.
 \item \texttt{shared\_by\_friends}: List containing suggestions to the user made by members within his/her same group. 
 \end{itemize}
 
-For further details in terms of database fields definition, the following code (\texttt{mysql.sql}) shows in SQL code shows the tables initialization: 
+For further details in terms of database fields definition, the following code (\texttt{mysql.sql}) shows in SQL language our tables initialization: 
 
 \begin{lstlisting}[language=json,firstnumber=1]
 CREATE TABLE IF NOT EXISTS `members` (
@@ -479,7 +478,7 @@ Picture whatever shows how the content is initialize for each user the very firs
 
 \subsubsection{Login Security}
 
-An important implementation to mention is that, in order to access to the personal webpage after the login action, a security checking has been implemented. The access to the welcome page containing personal user-based content is only possible if the login has been correctly done, case in which the authentication \texttt{SESSION VARIABLES}\footnote{A\textit{Session Variable} is an associative array containing session variables available to the current script.} are set and authenticated. 
+An important implementation to mention is that, in order to access to the personal webpage after the login action, a security checking has been implemented. The access to the welcome page containing personal user-based content is only possible if the login has been correctly done, case in which the authentication \texttt{SESSION VARIABLES}\cite{php:session}\footnote{'A\textit{Session Variable} is an associative array containing session variables available to the current script.'} are set and authenticated. 
 
 The following script (\texttt{auth.php}) shows this implementation:\footnote{\texttt{SESS\_MEMBER\_ID} is only initialized when the login authentication had been successful.}
 
@@ -498,7 +497,7 @@ if(!isset($_SESSION['SESS_MEMBER_ID'])
 ?>
 \end{lstlisting}
 
-In addition, for localhost testing purposes, is been included a management of the browser cookies\footnote{A \textit{cookie} is a small piece of data sent from a website and stored in a user's web browser while the user is browsing that website.} to allow more than one sessions running simultaneously in the same browser.
+In addition, for localhost testing purposes, it has been included a management of the browser cookies\cite{wiki:cookie}\footnote{'A \textit{cookie} is a small piece of data sent from a website and stored in a user's web browser while the user is browsing that website.'} to allow more than one sessions running simultaneously in the same browser.
 
 \subsection{Interaction Activities}
 \subsubsection{Watch Later} \label{watchlater}
@@ -548,7 +547,7 @@ As well as with the case of the Watch Later list, likes and dislikes are directl
 
 \subsubsection{Hyperlink Metadata}
 
-In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlink\footnote{\textit{Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
+In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlin\cite{wiki:hyper}\footnote{\textit{'Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.'} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
 
 ****PONER IMAGEN DE POSIBILIDAD DE CLICKAR METADATA****
 
@@ -608,10 +607,10 @@ $(document).bind('tv_changed', function (e,item) {
 
 *******PONER IMAGENES QUE DEMUESTRAN EL FUNCIONAMIENTO DE LA REMOTE****
 \subsection{Content Data} \label{data}
-This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\footnote{The \textit{British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. This way, it is not needed to locally store the testing dataset but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained at the same time the platform total weight is severely reduced since it does not locally store any dataset. 
+This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\cite{wiki:bbc}\footnote{\textit{'British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.'} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data based on programmes' IDs including metadata extraction. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. These scripts have been programmed making use of Javascript\cite{w3c:ajax}\footnote{\textit{'Asynchronous JavaScript and XML} (AJAX) is the method of exchanging data with a server, and updating parts of a web page without reloading the entire page.'} AJAX in the client side, and PHP in the server side. This way, it is not needed to locally store testing datasets but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained at the same time the platform total weight is severely reduced, since it does not locally store any dataset. 
 
-In addition, it has been taking into account the possible data structure that the recommendation system may use as input. For this purpose, a deep study of data structure compatibility has been conducted to facilitate as much a possible future implementations carried out by recommendation engines researchers. Based on various data extraction APIs\footnote{An \textit{Application-Programming Interface} (API) is a set of programming instructions and standards for accessing a Web-based software application or Web tool.} such as the \textit{BBC Developers API}\footnote{https://developer.bbc.co.uk/} or the \textit{TED Talks Lab API}\footnote{http://developer.ted.com/API\_Docs}
-we decided to set up the following structure for every object contained in our N-Screen, as programmes or videos\footnote{Notice that it is a random example using a extracted TED Talks Video.}:
+In addition, it has been taking into account the possible data structure that the recommendation system may use as input. For this purpose, a deep study of data structure compatibility has been conducted to facilitate as much a possible future implementations carried out by recommendation engines researchers. Based on various data extraction APIs\footnote{\textit{Application-Programming Interface}} such as the \textit{BBC Developers API}\footnote{https://developer.bbc.co.uk/} or the \textit{TED Talks Lab API}\footnote{http://developer.ted.com/API\_Docs}
+we decided to set up the following structure\footnote{Notice that it is a random example using a extracted TED Talks Video.} in \texttt{JSON} format for every object contained in our N-Screen, as programmes or videos:
 \begin{lstlisting}[language=json,firstnumber=1]
 {
 "pid":1000,
@@ -662,12 +661,115 @@ we decided to set up the following structure for every object contained in our N
 },
 \end{lstlisting}
 
-It is important to mention that in order to present an attractive platform to interact with, a complete data migration has been implemented. Due to its 
+In order to parse every possible response provided by the API selected to extract videos and programmes collection, it has been implemented a JavaScript function to set up a total compatibility in our platform. This script is named \texttt{changeData(data)} which source code is as follows:
+
+\begin{lstlisting}[language=json,firstnumber=1]
+//Adapt any http request to our own data format
+
+function changeData(data){
+
+  var random_ted = {
+    suggestions: []
+  };
+
+  if(data.talks == null){
+    return random_ted;
+  }  
+
+  for(var i = 0; i < data.talks.length; i++) {  var item = data.talks[i];
+      for(var j = 0; j < data.talks[i].talk.photo_urls.length; j++){
+        if(data.talks[i].talk.photo_urls[j].size == "240x180"){
+          var image = data.talks[i].talk.photo_urls[j].url;
+        }
+      } 
+
+      if(item.talk.media_profile_uris["internal"]){
+
+      random_ted.suggestions.push({ 
+          "pid"   : item.talk.id,
+          "title" : item.talk.name,          
+          "description" : item.talk.description,
+          "date_time" : item.talk.published_at,
+          // "media_profile_uris" : item.talk.media_profile_uris,
+          "url" : item.talk.media_profile_uris["internal"]["950k"].uri, //TODO CHANGE THIS
+          "video" : item.talk.media_profile_uris["internal"]["950k"].uri,
+          "speaker" : item.talk.speakers,
+          "image" : image,
+          "manifest" : {
+              "pid"   : item.talk.id,
+              "id" : item.talk.id,          
+              "title" : item.talk.name,
+              "image" : image,
+              "provider" : "ted",
+              "duration" : 1750,
+              "media": {
+                "mp4": {
+                  // "type": "video/x-swf",
+                  "uri": item.talk.media_profile_uris["internal"]["950k"].uri,
+                  "is_live": "false"
+                }
+              },
+              "type": "video/mp4"
+          },
+          "tags" : item.talk.tags
+      });
+
+      }
+      else{
+
+        random_ted.suggestions.push({ 
+          "pid"   : item.talk.id,
+          "title" : item.talk.name,          
+          "description" : item.talk.description,
+          "date_time" : item.talk.published_at,
+          // "media_profile_uris" : item.talk.media_profile_uris,
+          "url" : "", //TODO CHANGE THIS
+          "video" : "",
+          "speaker" : item.talk.speakers,
+          "image" : image,
+          "manifest" : {
+              "pid"   : item.talk.id,
+              "id" : item.talk.id,          
+              "title" : item.talk.name,
+              "image" : image,
+              "provider" : "ted",
+              "duration" : 1750,
+              "media": {
+                "mp4": {
+                  // "type": "video/x-swf",
+                  "uri": "",
+                  "is_live": "false"
+                }
+              },
+              "type": "video/mp4"
+          },
+          "tags" : item.talk.tags
+      });
+
+      }
+      
+  }return random_ted; 
+}
+\end{lstlisting}
+
+It is important to mention that in order to introduce an attractive platform to interact with, a complete data migration has been implemented. Due to its advantages and popularity we decided to implement the final demo making use of videos provided by TED Talks API\cite{cettolo2012wit3}.
 
 \subsection{Web Design}
+While building a web platform, it is important to design how to improve its functionality and also its graphical interface. A wide set of studies \cite{allen2012smashing} show how a not only well-built website, but also well-designed can increase its user traffic, due to an improved user enjoyment. Nowadays a aesthetic design 
+can be even more influential in affecting user preferences 
+than traditional operational usability, since its effect seems to transcend the product and influence other judgements, known as the \textit{halo effect}\cite{de2006interaction}\cite{wiki:halo}\footnote{'The \textit{halo effect} is a cognitive bias in which an observer's overall impression of a person, company, brand, or product influences the observer's feelings and thoughts about that entity's character or properties'}. The halo effect consists 
 
-\subsubsection{Welcome Page}
 
+For this reason, an extensive part of this project has been focused in web design research and implementation in order to reach an improved user experience. 
+
+Through previous subsections included in our Implementation Study, a list of solutions for \textit{functionality} issues have been exposed. In this subsection, we are going to introduce our implementations concerning \textit{design} issues. 
+
+\subsubsection{Home Page}
+Since the beginning of web pages, human-computer interaction has been an important factor concerning experience evaluations\cite{monk2004product}. Usability considerations played an important role and influence the way interactive systems are designed and developed\cite{green2003pleasure}. But determining user satisfaction, there have been a  fluctuation from functional fulfilment to how is the provided global experience\cite{de2006interaction}. How intuitive an interface is and how it looks is influencing the capability to engage users more than ever\cite{allen2012smashing}. Now users are demanding functionality, usability and aesthetics in order to generate affective responses. 
+
+For this reason, it is severely important trying to understand who are going to be the final users of an interactive service, where is it going to be used and how. Following this, we converge to a main aspect that the homepage demanded to accomplish due to its inherit second screen conduct: It needed to be easy to use in order to not distract the user from the main viewing experience, in our case, mostly in front of a TV; and at the same time meet aesthetic design to boost users engagement. We found that the homepage  was lacking first sight relevant information, therefore it required more attention than actually needed. 
+
+\cite{nielsen2002homepage}
 \subsubsection{Selected Programme}
 
 \subsubsection{Call-to-action buttons}

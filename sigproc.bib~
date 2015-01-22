@@ -80,7 +80,7 @@
 }
 
 @article{skadberg2004visitors,
-  title={Visitors’ flow experience while browsing a Web site: its measurement, contributing factors and consequences},
+  title={Visitors flow experience while browsing a Web site: its measurement, contributing factors and consequences},
   author={Skadberg, Yongxia Xia and Kimmel, James R},
   journal={Computers in human behavior},
   volume={20},
@@ -127,7 +127,7 @@
 }
 
 @article{krug2014don,
-  title={Don’t make me think, revisited: A common sense approach to web (and mobile) usability},
+  title={Dont make me think, revisited: A common sense approach to web (and mobile) usability},
   author={Krug, Steve},
   journal={Berkley: New Riders},
   year={2014}
@@ -141,13 +141,166 @@
   publisher={John Wiley \& Sons}
 }
 
-
 @book{norman2002design,
   title={The design of everyday things},
   author={Norman, Donald A},
   year={2002},
   publisher={Basic books}
 }
+
+@inproceedings{cettolo2012wit3,
+  title={Wit3: Web inventory of transcribed and translated talks},
+  author={Cettolo, Mauro and Girardi, Christian and Federico, Marcello},
+  booktitle={Proceedings of the 16th Conference of the European Association for Machine Translation (EAMT)},
+  pages={261--268},
+  year={2012}
+}
+
+@misc{wiki:multitask,
+   author = "Wikipedia",
+   title = "Human multitasking --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "\url{http://en.wikipedia.org/w/index.php?title=Human_multitasking&oldid=642991102}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=Human_multitasking&oldid=642991102}]"
+}
+
+@misc{wiki:app,
+   author = "Wikipedia",
+   title = "Application software --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "\url{http://en.wikipedia.org/w/index.php?title=Application_software&oldid=641246771}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=Application_software&oldid=641246771}]"
+}
+
+@misc{business:bb,
+   author = "Business Dictionary",
+   title = "Browser-Based --- Business Dictionary",
+   url = "\url{http://www.businessdictionary.com/definition/browser-based-applications.html}",
+   note = "[Online, Available at \url{http://www.businessdictionary.com/definition/browser-based-applications.html}]"
+}
+
+@misc{tech:platform,
+   author = "Techopedia",
+   title = "Platform --- Techopedia",
+   url = "\url{http://www.techopedia.com/definition/3411/platform}",
+   note = "[Online, Available at \url{http://www.techopedia.com/definition/3411/platform}]"
+}
+
+@misc{web:cp,
+   author = "Webopedia",
+   title = "Cross-Platform --- Webopedia",
+   url = "{http://www.webopedia.com/TERM/C/cross_platform.html}",
+   note = "[Online, Available at \url{http://www.webopedia.com/TERM/C/cross_platform.html}]"
+}
+
+@misc{wiki:xmpp,
+   author = "Wikipedia",
+   title = "XMPP --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "{http://en.wikipedia.org/w/index.php?title=XMPP&oldid=643175467}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=XMPP&oldid=643175467}]"
+}
+
+@misc{w3c:openid,
+   author = "World Wide Web Consortium",
+   title = "OpenID --- W3C",
+   note = "[Online; Available at \url{http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/Protocols#OpenID}]"
+}
+
+@misc{web:sdk,
+   author = "Webopedia",
+   title = "SDK --- Webopedia",
+   note = "[Online, Available at \url{http://www.webopedia.com/TERM/S/SDK.html}]"
+}
+
+@misc{wiki:md5,
+   author = "Wikipedia",
+   title = "MD5 --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=MD5&oldid=641279744}]"
+}
+
+@misc{json:json,
+   author = "JSON",
+   title = "JSON --- Introducing JSON",
+   note = "[Online, Available at \url{http://www.json.org/}]"
+}
+
+@misc{php:session,
+   title = "\$\_SESSION --- PHP Manual",
+   note = "[Online, Available at \url{http://php.net/manual/es/reserved.variables.session.php}]"
+}
+
+@misc{wiki:cookie,
+   author = "Wikipedia",
+   title = "HTTP cookie --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "\url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}]"
+}
+
+@misc{wiki:hyper,
+   author = "Wikipedia",
+   title = "Hyperlink --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "\url{http://en.wikipedia.org/w/index.php?title=Hyperlink&oldid=643531082}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=Hyperlink&oldid=643531082}]"
+}
+ @misc{ wiki:bbc,
+   author = "Wikipedia",
+   title = "BBC --- Wikipedia{,} The Free Encyclopedia",
+   year = "2015",
+   url = "\url{http://en.wikipedia.org/w/index.php?title=BBC&oldid=643446361}",
+   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=BBC&oldid=643446361}]"
+}
+
+@misc{w3c:ajax,
+   author = "World Wide Web Consortium",
+   title = "AJAX --- W3C",
+   note = "[Online; Available at \url{http://www.w3schools.com/ajax/ajax_intro.asp}]"
+}
+
+@book{nielsen2002homepage,
+  title={Homepage usability: 50 websites deconstructed},
+  author={Nielsen, Jakob and Tahir, Marie and Tahir, Marie},
+  volume={50},
+  year={2002},
+  publisher={New Riders Indianapolis, IN}
+}
+
+@inproceedings{de2006interaction,
+  title={Interaction, usability and aesthetics: what influences users' preferences?},
+  author={De Angeli, Antonella and Sutcliffe, Alistair and Hartmann, Jan},
+  booktitle={Proceedings of the 6th conference on Designing Interactive systems},
+  pages={271--280},
+  year={2006},
+  organization={ACM}
+}
+
+@book{green2003pleasure,
+  title={Pleasure with products: Beyond usability},
+  author={Green, William S and Jordan, Patrick W},
+  year={2003},
+  publisher={CRC Press}
+}
+
+@article{monk2004product,
+  title={The product as a fixed-effect fallacy},
+  author={Monk, Andrew},
+  journal={Human-Computer Interaction},
+  volume={19},
+  number={4},
+  pages={371--375},
+  year={2004},
+  publisher={L. Erlbaum Associates Inc.}
+}
+
+
+
+
+
+
+
 
 
 

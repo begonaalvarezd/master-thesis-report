@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{php:session}
+\$\_session --- php manual.
+\newblock [Online, Available at
+  \url{http://php.net/manual/es/reserved.variables.session.php}].
+
 \bibitem{allen2012smashing}
 J.~Allen and J.~Chudley.
 \newblock {\em Smashing UX design: Foundations for designing online user
@@ -12,11 +17,44 @@ L.~Aroyo, A.~Conconi, S.~Dietze, A.~Kaptein, L.~Nixon, C.~Nufer, D.~Palmisano,
 \newblock Notube--making tv a medium for personalized interaction.
 \newblock 2009.
 
+\bibitem{cettolo2012wit3}
+M.~Cettolo, C.~Girardi, and M.~Federico.
+\newblock Wit3: Web inventory of transcribed and translated talks.
+\newblock In {\em Proceedings of the 16th Conference of the European
+  Association for Machine Translation (EAMT)}, pages 261--268, 2012.
+
+\bibitem{w3c:ajax}
+W.~W.~W. Consortium.
+\newblock Ajax --- w3c.
+\newblock [Online; Available at
+  \url{http://www.w3schools.com/ajax/ajax_intro.asp}].
+
+\bibitem{w3c:openid}
+W.~W.~W. Consortium.
+\newblock Openid --- w3c.
+\newblock [Online; Available at
+  \url{http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/Protocols#Open%
+ID}].
+
 \bibitem{cruickshank2007making}
 L.~Cruickshank, E.~Tsekleves, R.~Whitham, A.~Hill, and K.~Kondo.
 \newblock Making interactive tv easier to use: Interface design for a second
   screen approach.
 \newblock {\em The Design Journal}, 10(3):41--53, 2007.
+
+\bibitem{de2006interaction}
+A.~De~Angeli, A.~Sutcliffe, and J.~Hartmann.
+\newblock Interaction, usability and aesthetics: what influences users'
+  preferences?
+\newblock In {\em Proceedings of the 6th conference on Designing Interactive
+  systems}, pages 271--280. ACM, 2006.
+
+\bibitem{business:bb}
+B.~Dictionary.
+\newblock Browser-based --- business dictionary.
+\newblock [Online, Available at
+  \url{http://www.businessdictionary.com/definition/browser-based-applications%
+.html}].
 
 \bibitem{evolumedia1}
 {Evolumedia Group \& Canadian Media Fund}.
@@ -29,6 +67,11 @@ L.~Cruickshank, E.~Tsekleves, R.~Whitham, A.~Hill, and K.~Kondo.
 \newblock The second screen and television. white paper series number 2.
   benefits \& impacts.
 \newblock March 2013.
+
+\bibitem{green2003pleasure}
+W.~S. Green and P.~W. Jordan.
+\newblock {\em Pleasure with products: Beyond usability}.
+\newblock CRC Press, 2003.
 
 \bibitem{hritzuk2014multiscreen}
 N.~Hritzuk and K.~Jones.
@@ -43,7 +86,7 @@ G.~Z.-h.~L. Jia-xi and W.~Jin.
 
 \bibitem{krug2014don}
 S.~Krug.
-\newblock Don’t make me think, revisited: A common sense approach to web (and
+\newblock Dont make me think, revisited: A common sense approach to web (and
   mobile) usability.
 \newblock {\em Berkley: New Riders}, 2014.
 
@@ -53,10 +96,20 @@ S.~Krug.
   opportunities for marketers to reach and engage consumers.
 \newblock March 2013.
 
+\bibitem{monk2004product}
+A.~Monk.
+\newblock The product as a fixed-effect fallacy.
+\newblock {\em Human-Computer Interaction}, 19(4):371--375, 2004.
+
 \bibitem{libbyrecommender}
 C.~Newell and L.~Miller.
 \newblock {Design and Evaluation of a Client-side Recommender System}.
 \newblock Technical report, British Broadcasting Corporation, 01 2014.
+
+\bibitem{nielsen2002homepage}
+J.~Nielsen, M.~Tahir, and M.~Tahir.
+\newblock {\em Homepage usability: 50 websites deconstructed}, volume~50.
+\newblock New Riders Indianapolis, IN, 2002.
 
 \bibitem{nielsentv}
 {Nielsen Holdings N.V.}
@@ -88,14 +141,76 @@ C.~Shih.
 
 \bibitem{skadberg2004visitors}
 Y.~X. Skadberg and J.~R. Kimmel.
-\newblock Visitors’ flow experience while browsing a web site: its
-  measurement, contributing factors and consequences.
+\newblock Visitors flow experience while browsing a web site: its measurement,
+  contributing factors and consequences.
 \newblock {\em Computers in human behavior}, 20(3):403--422, 2004.
+
+\bibitem{tech:platform}
+Techopedia.
+\newblock Platform --- techopedia.
+\newblock [Online, Available at
+  \url{http://www.techopedia.com/definition/3411/platform}].
 
 \bibitem{multiscreen:google}
 {Think With Google}.
 \newblock {The New Multi-Screen World: Understanding Cross-Platform Consumer
   Behavior}.
 \newblock {\em Think Newsletter}, August 2012.
+
+\bibitem{web:cp}
+Webopedia.
+\newblock Cross-platform --- webopedia.
+\newblock [Online, Available at
+  \url{http://www.webopedia.com/TERM/C/cross_platform.html}].
+
+\bibitem{web:sdk}
+Webopedia.
+\newblock Sdk --- webopedia.
+\newblock [Online, Available at
+  \url{http://www.webopedia.com/TERM/S/SDK.html}].
+
+\bibitem{wiki:app}
+Wikipedia.
+\newblock Application software --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=Application_software&oldid=64%
+1246771}].
+
+\bibitem{wiki:bbc}
+Wikipedia.
+\newblock Bbc --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=BBC&oldid=643446361}].
+
+\bibitem{wiki:cookie}
+Wikipedia.
+\newblock Http cookie --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}].
+
+\bibitem{wiki:multitask}
+Wikipedia.
+\newblock Human multitasking --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=Human_multitasking&oldid=6429%
+91102}].
+
+\bibitem{wiki:hyper}
+Wikipedia.
+\newblock Hyperlink --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=Hyperlink&oldid=643531082}].
+
+\bibitem{wiki:md5}
+Wikipedia.
+\newblock Md5 --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=MD5&oldid=641279744}].
+
+\bibitem{wiki:xmpp}
+Wikipedia.
+\newblock Xmpp --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 21-January-2015, Available at
+  \url{http://en.wikipedia.org/w/index.php?title=XMPP&oldid=643175467}].
 
 \end{thebibliography}
