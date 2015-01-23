@@ -231,14 +231,6 @@
    note = "[Online, Available at \url{http://php.net/manual/es/reserved.variables.session.php}]"
 }
 
-@misc{wiki:cookie,
-   author = "Wikipedia",
-   title = "HTTP cookie --- Wikipedia{,} The Free Encyclopedia",
-   year = "2015",
-   url = "\url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}",
-   note = "[Online; accessed 21-January-2015, Available at \url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}]"
-}
-
 @misc{wiki:hyper,
    author = "Wikipedia",
    title = "Hyperlink --- Wikipedia{,} The Free Encyclopedia",
@@ -317,10 +309,75 @@
   publisher={O'reilly Sebastopol, CA}
 }
 
+@article{bobadilla2013recommender,
+  title={Recommender systems survey},
+  author={Bobadilla, Jes{\'u}s and Ortega, Fernando and Hernando, Antonio and Guti{\'e}rrez, Abraham},
+  journal={Knowledge-Based Systems},
+  volume={46},
+  pages={109--132},
+  year={2013},
+  publisher={Elsevier}
+}
 
+@inproceedings{robertson1996dual,
+  title={Dual device user interface design: PDAs and interactive television},
+  author={Robertson, Scott and Wharton, Cathleen and Ashworth, Catherine and Franzke, Marita},
+  booktitle={Proceedings of the SIGCHI conference on Human factors in computing systems},
+  pages={79--86},
+  year={1996},
+  organization={ACM}
+}
 
+@inproceedings{das1998recommender,
+  title={Recommender systems for TV},
+  author={Das, Duco and ter Horst, Herman},
+  booktitle={Recommender Systems, Papers from the 1998 Workshop, Technical Report WS-98-08},
+  pages={35--36},
+  year={1998}
+}
 
+@inproceedings{cotter2000ptv,
+  title={Ptv: Intelligent personalised tv guides},
+  author={Cotter, Paul and Smyth, Barry},
+  booktitle={AAAI/IAAI},
+  pages={957--964},
+  year={2000}
+}
 
+@inproceedings{ardissono2001architecture,
+  title={Architecture of a system for the generation of personalized Electronic Program Guides},
+  author={Ardissono, Liliana and Portis, F and Torasso, P and Bellifemine, F and Chiarotto, A and Difino, A},
+  booktitle={Proc. UM’01 Workshop on Personalization in Future TV},
+  year={2001},
+  organization={Citeseer}
+}
+
+@inproceedings{kurapati2001multi,
+  title={A multi-agent TV recommender},
+  author={Kurapati, Kaushal and Gutta, Srinivas and Schaffer, David and Martino, Jacquelyn and Zimmerman, John},
+  booktitle={Proceedings of the UM 2001 workshop “Personalization in Future TV},
+  year={2001}
+}
+
+@inproceedings{ali2004tivo,
+  title={TiVo: making show recommendations using a distributed collaborative filtering architecture},
+  author={Ali, Kamal and Van Stam, Wijnand},
+  booktitle={Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining},
+  pages={394--401},
+  year={2004},
+  organization={ACM}
+}
+
+@article{haibe2012predictive,
+  title={Predictive networks: a flexible, open source, web application for integration and analysis of human gene networks},
+  author={Haibe-Kains, Benjamin and Olsen, Catharina and Djebbari, Amira and Bontempi, Gianluca and Correll, Mick and Bouton, Christopher and Quackenbush, John},
+  journal={Nucleic acids research},
+  volume={40},
+  number={D1},
+  pages={D866--D875},
+  year={2012},
+  publisher={Oxford Univ Press}
+}
 
 
 

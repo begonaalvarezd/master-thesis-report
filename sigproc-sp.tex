@@ -29,7 +29,7 @@
 \documentclass{acm_proc_article-sp}
 
 \usepackage{url}
-\usepackage{wrapfig,lipsum}
+\usepackage{wrapfig,lipsum,morefloats}
 
 % For roman numbers
 \makeatletter
@@ -145,7 +145,7 @@ Bego\~na \'Alvarez de la Cruz\\
 \begin{abstract}
 A second screen is a hand-device which is susceptible to provide added value to the TV content consumption. Notube, with their web browser-based second screen application, moved further through this concept, creating an assosiation between the second screen, Web and TV content. Nevertheless, the implemention still lacks completion in order achieve a full service and its users' satisfaction.
 
-This project shows the development of a social N-Screen prototype based on previous researches and implementations carried out by Notube. This platform is intended to be used by small groups to explore on-demand content. The main goal of the project is consisted on searching and implementing features to the platform in order to offer to the final user an improved user experience. This improvement is leaded by the features that allow a completion in the user interaction flow with the platform, such as the implementation of a registration and login, the provision of persistence to the user based content and the addition of new functionalities as personal lists and likes/dislikes tracking.
+This project shows the development of a social N-Screen prototype. The main goal was to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
 \end{abstract}
 
 \section{Introduction}
@@ -239,7 +239,7 @@ It is developed following a \textit{user-centric approach}\footnote{Placing user
 
 \subsection{Goals}
 
-The main goal of the project is to re-design, implement and improve the functionallity, interactivity and user experience of the browser-based second screen recommender platform\cite{tech:platform}\footnote{'A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.'} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
+The main goal of the project is to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform\cite{tech:platform}\footnote{'A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.'} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
 
 Most of the second screen apps in the market are not successfully developed because they are focused on enhance activities  that do not fulfil the real consumer needs\cite{evolumedia1}. Consequently, the audience engagement fails. This fact is crucial and it must be taken into account in order to make the platform valuable.
 
@@ -300,45 +300,22 @@ debugging and improvement.
 
 
 \subsection{Outline}
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
 
+Section 2 introduces the state of art of TV recommender second screens systems. Section 3 presents a review study to define our platform. Section 4 explains every aspect concerning the platform development. Section 5 shows the final evaluation and illustrates obtained results. Section 6 reports our conclusions.
 
 \section{State-of-Art}
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
 
+The development of a hand device service to be used in a TV environment is not new. Already in 1996\cite{robertson1996dual} it was introduce an innovative system concerning hand devices in order to accomplish TV interaction. Since the exponent emergence of interactive systems involving TV and hand devices, used as second screens, a wide set of research is emerging around second screens usage. Concerning second screen recommendations systems, much work have been done in order to help users with extensive quantities of on demand content provided by the TV. The TV-Advisor\cite{das1998recommender},  the PTV system \cite{cotter2000ptv}, EPG \cite{ardissono2001architecture} and the multi-agent TV recommender\cite{kurapati2001multi} prsent some of the earliest TV recommender systems. Furthermore, TiVO\cite{ali2004tivo} and Predictive Networks\cite{haibe2012predictive} launched commercial systems to provide TV recomendarions. 
 
+The TV-Advisor makes use of explicit techniques to generate recommendations for a TV viewer, extracting user preferences explicitly provided by them in order to get a high quality recommendation. Nevertheless, this system makes use of volatile data, therefore does not allow an evolution of the user profile over time.
+
+The PTV improved the weak point of the TV-Advisor, allowing the system to improve the recommendations over time storing the relevant data. However, the set of recommendations was stored in a different place of the main system, removing users from the main system experience. 
+
+One of the earliest commercially available TV recommenders comes from TiVO, generating recommendations directly displayed to the users. Additionally, the system learns by a tracking system combined with a a explicit introduced feedback to indicate the user's feeling about TV content. 
+
+All of the systems described above share one common characteristic: the systems are developed as non cross-platform. Our N-Screen improves this aspect providing a fully compatible system, requiring to users just Internet access and they preferred browser. 
+
+Recently, a slight number of new browser-based systems have been launched due to its advantages. See \texttt{http://peel.com/}, \texttt{https://www.fan.tv/}, \texttt{http://www.buddytv.com/} and \newline \texttt{https://www.simultv.com/}. 
 \section{Review Study}
 A model for the platform is defined in this chapter. Initially, the first version of the N-Screen developed by Notube\cite{aroyo2009notube} is evaluated to obtain some guidelines and potential improvements facing our own. The final software implementation requirements and constraints are defined. Finally, a discussion and evaluation over different features is carried out, exposing different options and some final conclusions in order to face a potential deployment to final users.
 \subsection{Browser-Based Social N-Screen Platform Model}
@@ -546,15 +523,13 @@ The idea came from the project developed by Vista-TV Sibyl\footnote{http://sibyl
 
 As well as with the case of the Watch Later list, likes and dislikes are directly populated with the implicit user interaction of clicking a button; simultaneously updating the database with PHP script \texttt{set\_channel.php}. 
 
-*****PONER IMAGEN DE LIKES AND DISLIKES*******
-
 \subsubsection{Hyperlink Metadata}
 
 In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlin\cite{wiki:hyper}\footnote{\textit{'Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.'} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
 
-****PONER IMAGEN DE POSIBILIDAD DE CLICKAR METADATA****
-
 \subsubsection{Random Selection}
+Nowadays, recommendation systems offer a manner to save time  exploring for the users between their preferences.
+This new service presents an almost universal acceptance due to its advantages\cite{bobadilla2013recommender}. Despite this, recommendation systems bound the user within his/her pre-defined preferences, not offering to the users to explore totally new content. For this reason, our last addition has been the implementation of the possibility to select a random selection of videos. The idea was motivated by \texttt{http://nscreen.notu.be/ted/}. This way, we can provide to the final users a way to explore non-related content with them, and therefore, offering the possibility to find new preferences. 
 
 \subsection{Remote TV}
 
@@ -610,7 +585,6 @@ $(document).bind('tv_changed', function (e,item) {
 });
 \end{lstlisting}
 
-*******PONER IMAGENES QUE DEMUESTRAN EL FUNCIONAMIENTO DE LA REMOTE****
 \subsection{Content Data} \label{data}
 This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\cite{wiki:bbc}\footnote{\textit{'British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.'} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data based on programmes' IDs including metadata extraction. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. These scripts have been programmed making use of Javascript\cite{w3c:ajax}\footnote{\textit{'Asynchronous JavaScript and XML} (AJAX) is the method of exchanging data with a server, and updating parts of a web page without reloading the entire page.'} AJAX in the client side, and PHP in the server side. This way, it is not needed to locally store testing datasets but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained at the same time the platform total weight is severely reduced, since it does not locally store any dataset. 
 
@@ -916,12 +890,12 @@ This tests tried to prove that every functional part included in the source code
   \item Faraway Programme Sharing to a Single User
   \begin{itemize}
   	\item [-]Unique notifications
-  	\item [-]Unique Shared by friends channel
+  	\item [-]Unique Shared by Friends channel
   \end{itemize}
   \item Faraway Programme Sharing to a Group
   \begin{itemize}
   	\item [-]Group Notifications
-  	\item [-]Group Shared by friends channel
+  	\item [-]Group Shared by Friends channel
   \end{itemize}
   \item Programme selection
   \begin{itemize}
@@ -929,7 +903,7 @@ This tests tried to prove that every functional part included in the source code
   	\item [-]Local play
   	\item [-]Call-to-action icons
   	\item [-]Tags
-  	\item [-]More Like this
+  	\item [-]More Like This
   \end{itemize}
   \item Virtual TV
   \begin{itemize}
@@ -961,7 +935,7 @@ Each participant in an N-Screen group starts with a different set of personalise
 
 All participants showed an enthusiastic feedback about the homepage. The display of a short set of videos below each channel was for them very informative and non disturbing. 
 
-Additionally, tapping on a programme in our N-Screen displays an overlay with a brief programme synopsis with clickable tags, play button, a vertical bar containing call-to-action icons and a set of programmes related to the selected one. All participants showed a positive reaction to this overlay, considering it with the precise information needed. We asked the participants to try to interact with the programme overlay, and all of them found out easily that 'Watch Later', 'Like' and 'Dislike' buttons where clickable and concerned an updating of their personal lists, and also all of them realised that 'Shared by Friends' and 'Recently Viewed' were static buttons automatically rendered by the platform. Concerning the hyperlink metadata, all participants figured out that they were also clickable and were appreciative about them, showing videos related to a specific tag was very useful for everyone.  In addition, the play button was intuitive for every participant.  
+Additionally, tapping on a programme in our N-Screen displays an overlay with a brief programme synopsis with clickable tags, play button, a vertical bar containing call-to-action icons and a set of programmes related to the selected one. All participants showed a positive reaction to this overlay, considering it with the precise information needed. We asked the participants to try to interact with the programme overlay, and all of them found out easily that 'Watch Later', 'Like' and 'Dislike' buttons where clickable and concerned an updating of their personal lists, and also all of them realised that 'Shared by Friends' and 'Recently Viewed' were static buttons automatically rendered by the platform. It is important to mention that one of the participants realised that the Like and Dislike buttons were not exclusive, being possible to have both at the same time active. Concerning the hyperlink metadata, all participants figured out that they were also clickable and were appreciative about them, showing videos related to a specific tag was very useful for everyone.  In addition, the play button was intuitive for every participant.  
 
 It is important to mention that every participant except one exposed a comment without being asked about the random selection. They found this possibility definitely useful, since sometimes it is preferable to watch something totally non-related to own preferences and therefore find something new. 
 
@@ -981,27 +955,47 @@ All participants were very enthusiastic about the Virtual TV and found this feat
 At the end of the evaluation with every participant, we asked them how was their general feeling about the platform, how intuitive it was and also its aesthetic. Every participant shared a positive reaction after this questions, explaining that it was generally intuitive and also with a beautiful non disturbing minimalistic interface.  
 
 \subsubsection{Results}
-After the evaluation with final users, 
+
+Overall, participants were complimentary about trying out our own version of N-Screen; they mostly liked it and found it fun and easy to use:
+
+\begin{itemize}
+	\item The registration requirement was accepted for every participant but one. 
+	\item The login was was easy to use for everyone. 
+	\item The homepage design was universally liked. 
+	\item The selected programme overlay was universally liked. 
+	\item The drag\&drop was intuitive for most of the participants. 
+	\item The vertical bar with icons was universally liked and found very useful.
+	\item The random selection was universally liked.
+	\item The hypelink metadata was universally liked and found very useful. 
+\end{itemize}
+
+Moreover, some issues were found with a potential future improvement: 
+
+\begin{itemize}
+	\item It can be included the possibility to enter to the platform without being registered. 
+	\item Exclusive Like and Dislike needs to be implemented. 
+	\item A hint for just registered users in order to help them how to share a programme should be included. 
+	\item Horizontal scroll in homepage should be not allowed.
+\end{itemize}
+
+As a result from the evaluation, we can conclude that our approach in order to improve the Notube N-Screen platform has been successful. Therefore our main goal has been accomplished. 
 \section{Conclusions}
-This paragraph will end the body of this sample document.
-Remember that you might still have Acknowledgments or
-Appendices; brief samples of these
-follow.  There is still the Bibliography to deal with; and
-we will make a disclaimer about that here: with the exception
-of the reference to the \LaTeX\ book, the citations in
-this paper are to articles which have nothing to
-do with the present subject and are used as
-examples only.
+
+In this report, we are addressing the interactivity problem of recommender second screen apps. We developed an innovative browser-based platform based on Notube previous work and we tried to improve it including new features meanwhile providing a scalable software design to enable future recommendation strategies testing. 
+The main thrust of this project was to adapt the platform including new features in order to improve five main issues identified: the volatile treat of the explicit relevant data provided by users, the sequential usage of the second screen, the lack of interactive activities, the possibility to play a video both locally and through a virtual TV and an scalable software to enable future data content migrations. 
+
+The volatile data was settled by including a registration system in order to track user preferences. To deal with the sequential usage behaviour, an editable watch later list has been implemented. To offer a more attractive set of possible activities to interact with, explicitly provided feedback of programmes by like and dislike actions, hyperlink metadata to browse further and a random selection have been included. Both the locally and the remote watching have been successfully fixed and at last the platform has been designed to be fully adaptable to enable future content data migrations.  
+
+Our results extracted from the evaluation showed how every goal have been pleasantly accomplished. 
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
-This section is optional; it is a location for you
-to acknowledge grants, funding, editing assistance and
-what have you.  In the present case, for example, the
-authors would like to thank Gerald Murray of ACM for
-his help in codifying this \textit{Author's Guide}
-and the \textbf{.cls} and \textbf{.tex} files that it describes.
+I am using this opportunity to express my gratitude to everyone who supported me throughout the course of this project. I am thankful for their aspiring guidance, invaluably constructive criticism and advice. I am sincerely grateful to them for sharing their truthful and illuminating views on a number of issues related to this project.
+
+I would also like to express my gratitude to my supervisor Lora Aroyo and my co-supervisor Valentina Maccatrozzo for the useful comments, remarks and engagement through the learning process of this master thesis. 
+
+I would also like mention special thanks to my brother, mother and father for all the received affection and support. At last but not least, I would like to express my sincere thanks to Agust\'in Tena for every single moment during the process of this project. 
 
 %
 % The following two commands are all you need in the
@@ -1018,52 +1012,269 @@ and the \textbf{.cls} and \textbf{.tex} files that it describes.
 %
 %APPENDICES are optional
 %\balancecolumns
-\appendix
-%Appendix A
-\section{Headings in Appendices}
-The rules about hierarchical headings discussed above for
-the body of the article are different in the appendices.
-In the \textbf{appendix} environment, the command
-\textbf{section} is used to
-indicate the start of each Appendix, with alphabetic order
-designation (i.e. the first is A, the second B, etc.) and
-a title (if you include one).  So, if you need
-hierarchical structure
-\textit{within} an Appendix, start with \textbf{subsection} as the
-highest level. Here is an outline of the body of this
-document in Appendix-appropriate form:
-\subsection{Introduction}
-\subsection{The Body of the Paper}
-\subsubsection{Type Changes and  Special Characters}
-\subsubsection{Math Equations}
-\paragraph{Inline (In-text) Equations}
-\paragraph{Display Equations}
-\subsubsection{Citations}
-\subsubsection{Tables}
-\subsubsection{Figures}
 
-\subsubsection{Theorem-like Constructs}
-\subsubsection*{A Caveat for the \TeX\ Expert}
-\subsection{Conclusions}
-\subsection{Acknowledgments}
-\subsection{Additional Authors}
-This section is inserted by \LaTeX; you do not insert it.
-You just add the names and information in the
-\texttt{{\char'134}additionalauthors} command at the start
-of the document.
-\subsection{References}
-Generated by bibtex from your ~.bib file.  Run latex,
-then bibtex, then latex twice (to resolve references)
-to create the ~.bbl file.  Insert that ~.bbl file into
-the .tex source file and comment out
-the command \texttt{{\char'134}thebibliography}.
+%Appendix A
+\onecolumn
+\newpage
+\centering
+\appendix
+\centering
+\section{Screenshots}
+\vspace{30mm}
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/registration.png}}
+    \end{picture}
+    \caption{Registration Form}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/login.png}}
+    \end{picture}
+    \caption{Login Form}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepage.png}}
+    \end{picture}
+    \caption{Homepage - Suggestions for you, Shared by friends}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepage2.png}}
+    \end{picture}
+    \caption{Homepage - Recently Viewed, Watch Later}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepage3.png}}
+    \end{picture}
+    \caption{Homepage - Likes, Dislikes}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/programme.png}}
+    \end{picture}
+    \caption{Programme overlay}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/localplay.png}}
+    \end{picture}
+    \caption{Local play of a programme}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/tag.png}}
+    \end{picture}
+    \caption{Hyperlink tag overlay}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/more.png}}
+    \end{picture}
+    \caption{More like this}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all1.png}}
+    \end{picture}
+    \caption{View All - Suggestions for you}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all2.png}}
+    \end{picture}
+    \caption{View All - Shared by friends}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all3.png}}
+    \end{picture}
+    \caption{View All - Recently Viewed}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all4.png}}
+    \end{picture}
+    \caption{View All - Watch Later}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all5.png}}
+    \end{picture}
+    \caption{View All - Likes}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/all6.png}}
+    \end{picture}
+    \caption{View All - Dislikes}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/random.png}}
+    \end{picture}
+    \caption{Random Selection}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/sharing1.png}}
+    \end{picture}
+    \caption{Drag\&Drop - Sharing to a single person}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/sharing2.png}}
+    \end{picture}
+    \caption{Drag\&Drop - Sharing to a group}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/notifications.png}}
+    \end{picture}
+    \caption{Homepage - Notifications - Programme shared}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepagevirtual.png}}
+    \end{picture}
+    \caption{Homepage - Virtual TV ON}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/sharing3.png}}
+    \end{picture}
+    \caption{Drag\&Drop - Virtual TV}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/player.png}}
+    \end{picture}
+    \caption{Virtual TV - Nothing playing}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/player2.png}}
+    \end{picture}
+    \caption{Virtual TV - Programme starting}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/player3.png}}
+    \end{picture}
+    \caption{Virtual TV - Programme playing}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepageplaying.png}}
+    \end{picture}
+    \caption{Homepage - Video currently playing in Virtual TV}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepageplaying.png}}
+    \end{picture}
+    \caption{Homepage - Programme currently playing in Virtual TV}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \setlength{\unitlength}{\textwidth} 
+    \begin{picture}(1,0.5)
+       \put(-0.1,0){\includegraphics[width=1.2\unitlength]{images/apendix/homepagenotifplayer.png}}
+    \end{picture}
+    \caption{Homepage - Notification programme currently playing in Virtual TV}
+\end{figure}
+
+
 % This next section command marks the start of
 % Appendix B, and does not continue the present hierarchy
-\section{More Help for the Hardy}
-The acm\_proc\_article-sp document class file itself is chock-full of succinct
-and helpful comments.  If you consider yourself a moderately
-experienced to expert user of \LaTeX, you may find reading
-it useful but please remember not to change it.
+\newpage
+\section{Source code}
+
+All the source files used to implement this platform  can be accessed at the public repository: \texttt{https://github.com/begonaalvarezd/begona-nscreen}
+
+
 \balancecolumns
 % That's all folks!
 \end{document}
+
+

@@ -5,17 +5,37 @@
 \newblock [Online, Available at
   \url{http://php.net/manual/es/reserved.variables.session.php}].
 
+\bibitem{ali2004tivo}
+K.~Ali and W.~Van~Stam.
+\newblock Tivo: making show recommendations using a distributed collaborative
+  filtering architecture.
+\newblock In {\em Proceedings of the tenth ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 394--401. ACM, 2004.
+
 \bibitem{allen2012smashing}
 J.~Allen and J.~Chudley.
 \newblock {\em Smashing UX design: Foundations for designing online user
   experiences}, volume~34.
 \newblock John Wiley \& Sons, 2012.
 
+\bibitem{ardissono2001architecture}
+L.~Ardissono, F.~Portis, P.~Torasso, F.~Bellifemine, A.~Chiarotto, and
+  A.~Difino.
+\newblock Architecture of a system for the generation of personalized
+  electronic program guides.
+\newblock In {\em Proc. UM’01 Workshop on Personalization in Future TV}.
+  Citeseer, 2001.
+
 \bibitem{aroyo2009notube}
 L.~Aroyo, A.~Conconi, S.~Dietze, A.~Kaptein, L.~Nixon, C.~Nufer, D.~Palmisano,
   L.~Vignaroli, and M.~Yankova.
 \newblock Notube--making tv a medium for personalized interaction.
 \newblock 2009.
+
+\bibitem{bobadilla2013recommender}
+J.~Bobadilla, F.~Ortega, A.~Hernando, and A.~Guti{\'e}rrez.
+\newblock Recommender systems survey.
+\newblock {\em Knowledge-Based Systems}, 46:109--132, 2013.
 
 \bibitem{cettolo2012wit3}
 M.~Cettolo, C.~Girardi, and M.~Federico.
@@ -41,11 +61,22 @@ W.~W.~W. Consortium.
   \url{http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/Protocols#Open%
 ID}].
 
+\bibitem{cotter2000ptv}
+P.~Cotter and B.~Smyth.
+\newblock Ptv: Intelligent personalised tv guides.
+\newblock In {\em AAAI/IAAI}, pages 957--964, 2000.
+
 \bibitem{cruickshank2007making}
 L.~Cruickshank, E.~Tsekleves, R.~Whitham, A.~Hill, and K.~Kondo.
 \newblock Making interactive tv easier to use: Interface design for a second
   screen approach.
 \newblock {\em The Design Journal}, 10(3):41--53, 2007.
+
+\bibitem{das1998recommender}
+D.~Das and H.~ter Horst.
+\newblock Recommender systems for tv.
+\newblock In {\em Recommender Systems, Papers from the 1998 Workshop, Technical
+  Report WS-98-08}, pages 35--36, 1998.
 
 \bibitem{de2006interaction}
 A.~De~Angeli, A.~Sutcliffe, and J.~Hartmann.
@@ -83,6 +114,13 @@ W.~S. Green and P.~W. Jordan.
 \newblock {\em Pleasure with products: Beyond usability}.
 \newblock CRC Press, 2003.
 
+\bibitem{haibe2012predictive}
+B.~Haibe-Kains, C.~Olsen, A.~Djebbari, G.~Bontempi, M.~Correll, C.~Bouton, and
+  J.~Quackenbush.
+\newblock Predictive networks: a flexible, open source, web application for
+  integration and analysis of human gene networks.
+\newblock {\em Nucleic acids research}, 40(D1):D866--D875, 2012.
+
 \bibitem{hritzuk2014multiscreen}
 N.~Hritzuk and K.~Jones.
 \newblock {\em Multiscreen Marketing: The Seven Things You Need to Know to
@@ -99,6 +137,12 @@ S.~Krug.
 \newblock Dont make me think, revisited: A common sense approach to web (and
   mobile) usability.
 \newblock {\em Berkley: New Riders}, 2014.
+
+\bibitem{kurapati2001multi}
+K.~Kurapati, S.~Gutta, D.~Schaffer, J.~Martino, and J.~Zimmerman.
+\newblock A multi-agent tv recommender.
+\newblock In {\em Proceedings of the UM 2001 workshop “Personalization in
+  Future TV}, 2001.
 
 \bibitem{microsoftcross}
 {Microsoft Advertising, Flamingo \& Ipsos OTX}.
@@ -136,6 +180,12 @@ P.~Pu and L.~Chen.
 \newblock Trust building with explanation interfaces.
 \newblock In {\em Proceedings of the 11th international conference on
   Intelligent user interfaces}, pages 93--100. ACM, 2006.
+
+\bibitem{robertson1996dual}
+S.~Robertson, C.~Wharton, C.~Ashworth, and M.~Franzke.
+\newblock Dual device user interface design: Pdas and interactive television.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, pages 79--86. ACM, 1996.
 
 \bibitem{schopman2010notube}
 B.~Schopman, D.~Brickly, L.~Aroyo, C.~van Aart, V.~Buser, R.~Siebes, L.~Nixon,
@@ -197,12 +247,6 @@ Wikipedia.
 \newblock Bbc --- wikipedia{,} the free encyclopedia, 2015.
 \newblock [Online; accessed 21-January-2015, Available at
   \url{http://en.wikipedia.org/w/index.php?title=BBC&oldid=643446361}].
-
-\bibitem{wiki:cookie}
-Wikipedia.
-\newblock Http cookie --- wikipedia{,} the free encyclopedia, 2015.
-\newblock [Online; accessed 21-January-2015, Available at
-  \url{http://en.wikipedia.org/w/index.php?title=HTTP_cookie&oldid=643349690}].
 
 \bibitem{wiki:multitask}
 Wikipedia.
