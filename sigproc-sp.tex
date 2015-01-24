@@ -27,9 +27,9 @@
 % For tracking purposes - this is V3.1SP - APRIL 2009
 
 \documentclass{acm_proc_article-sp}
-
 \usepackage{url}
 \usepackage{wrapfig,lipsum,morefloats}
+
 
 % For roman numbers
 \makeatletter
@@ -89,7 +89,7 @@
 \begin{document}
 
 \title{Prototyping of a Browser-Based Social N-Screen Platform}
-\subtitle{[Building Up to Boost User Experience]
+\subtitle{[Building Up for Recommendation Algorithms Testing while Boosting User Experience]
 }
 %
 % You need the command \numberofauthors to handle the 'placement
@@ -145,7 +145,7 @@ Bego\~na \'Alvarez de la Cruz\\
 \begin{abstract}
 A second screen is a hand-device which is susceptible to provide added value to the TV content consumption. Notube, with their web browser-based second screen application, moved further through this concept, creating an assosiation between the second screen, Web and TV content. Nevertheless, the implemention still lacks completion in order achieve a full service and its users' satisfaction.
 
-This project shows the development of a social N-Screen prototype. The main goal was to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
+This project shows the development of a social N-Screen prototype. The main goal was to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform carried out by Notube, in order to provide a functional and attractive platform that can be used to graphically test different recommendation strategies. 
 \end{abstract}
 
 \section{Introduction}
@@ -239,7 +239,7 @@ It is developed following a \textit{user-centric approach}\footnote{Placing user
 
 \subsection{Goals}
 
-The main goal of the project is to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform\cite{tech:platform}\footnote{'A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.'} carried out by Notube, in order to provide an attractive functional platform that can be used to graphically test different recommendation strategies. 
+The main goal of the project is to re-design, implement and improve the functionality, interactivity and user experience of the browser-based second screen recommender platform\cite{tech:platform}\footnote{'A \textit{platform} is a group of technologies that are used as a base upon which other applications, processes or technologies are developed.'} carried out by Notube, in order to provide a functional and attractive platform that can be used to graphically test different recommendation strategies. 
 
 Most of the second screen apps in the market are not successfully developed because they are focused on enhance activities  that do not fulfil the real consumer needs\cite{evolumedia1}. Consequently, the audience engagement fails. This fact is crucial and it must be taken into account in order to make the platform valuable.
 
@@ -301,19 +301,19 @@ debugging and improvement.
 
 \subsection{Outline}
 
-Section 2 introduces the state of art of TV recommender second screens systems. Section 3 presents a review study to define our platform. Section 4 explains every aspect concerning the platform development. Section 5 shows the final evaluation and illustrates obtained results. Section 6 reports our conclusions.
+Section 2 introduces the state of art of TV recommender second screens systems. Section 3 presents a review study to define our platform. Section 4 explains every aspect concerning the platform development. Section 5 shows the final evaluation and illustrates obtained results. Section 6 reports our conclusions and future lines.
 
 \section{State-of-Art}
 
-The development of a hand device service to be used in a TV environment is not new. Already in 1996\cite{robertson1996dual} it was introduce an innovative system concerning hand devices in order to accomplish TV interaction. Since the exponent emergence of interactive systems involving TV and hand devices, used as second screens, a wide set of research is emerging around second screens usage. Concerning second screen recommendations systems, much work have been done in order to help users with extensive quantities of on demand content provided by the TV. The TV-Advisor\cite{das1998recommender},  the PTV system \cite{cotter2000ptv}, EPG \cite{ardissono2001architecture} and the multi-agent TV recommender\cite{kurapati2001multi} prsent some of the earliest TV recommender systems. Furthermore, TiVO\cite{ali2004tivo} and Predictive Networks\cite{haibe2012predictive} launched commercial systems to provide TV recomendarions. 
+The development of a hand device service to be used in a TV environment is not new. Already in 1996\cite{robertson1996dual} it was introduce an innovative system concerning hand devices in order to accomplish TV interaction. Since the exponent emergence of interactive systems involving TV and hand devices, used as second screens, a wide set of research is emerging around it. Concerning second screen recommendations systems, much work have been done in order to help users with extensive quantities of on demand content provided by the TV. The TV-Advisor\cite{das1998recommender},  the PTV system \cite{cotter2000ptv}, EPG \cite{ardissono2001architecture} and the multi-agent TV recommender\cite{kurapati2001multi} present some of the earliest TV recommender systems. Furthermore, TiVO\cite{ali2004tivo} and Predictive Networks\cite{haibe2012predictive} launched commercial systems to provide TV recommendations. 
 
 The TV-Advisor makes use of explicit techniques to generate recommendations for a TV viewer, extracting user preferences explicitly provided by them in order to get a high quality recommendation. Nevertheless, this system makes use of volatile data, therefore does not allow an evolution of the user profile over time.
 
-The PTV improved the weak point of the TV-Advisor, allowing the system to improve the recommendations over time storing the relevant data. However, the set of recommendations was stored in a different place of the main system, removing users from the main system experience. 
+The PTV enhanced the weak point of the TV-Advisor, allowing the system to improve the recommendations over time storing the relevant data. However, the set of recommendations was stored in a different place of the main system, removing users from the main system experience. 
 
 One of the earliest commercially available TV recommenders comes from TiVO, generating recommendations directly displayed to the users. Additionally, the system learns by a tracking system combined with a a explicit introduced feedback to indicate the user's feeling about TV content. 
 
-All of the systems described above share one common characteristic: the systems are developed as non cross-platform. Our N-Screen improves this aspect providing a fully compatible system, requiring to users just Internet access and they preferred browser. 
+All of the systems described above share one common characteristic: the systems are developed as non cross-platform. Our N-Screen improves this aspect providing a fully compatible system, requiring to users just Internet access and they preferred browser. Furthermore, it presents an innovative feature, the Virtual TV, allowing faraway users to watch simultaneously the same selected programme, providing the experience of a \textit{'virtual living room'}. 
 
 Recently, a slight number of new browser-based systems have been launched due to its advantages. See \texttt{http://peel.com/}, \texttt{https://www.fan.tv/}, \texttt{http://www.buddytv.com/} and \newline \texttt{https://www.simultv.com/}. 
 \section{Review Study}
@@ -363,28 +363,23 @@ Once the first BBSNSP has been reviewed, it is moment to study how to settle eve
 
 Before being able to start programming the platform, it was required preparing the environment. 
 
-On the one hand, it was needed to set up a local server to be able to run and test our web application. We used XAMPP on a Linux distribution for this purpose, due to its multiple advantages and intuitiveness. XAMPP is an open source independent server platform which consists mainly of a MySQL database, Apache Web server and required interpreters for scripting languages as PHP and Perl. 
+On the one hand, it was needed to set up a local server to be able to run and test our web application. We used XAMPP on a Linux distribution for this purpose, due to its multiple advantages and intuitiveness. XAMPP is an open source independent server platform which consists mainly of a MySQL database, Apache Web server and required interpreters for scripting languages as PHP. 
 
-On the other hand, the set-up required an Ejabberd installation to manage instant messages in order to enable automatic non-typed communication between remote users and allow them to collaborate -suggest-. Ejabberd is a Jabber/XMPP\cite{wiki:xmpp}\footnote{\textit{'Extensible Messaging and Presence Protocol}, better known as XMPP (formerly Jabber), is an open and extensible XML-based protocol originally designed for instant messaging.'} server \cite{jia2010xmpp} which is realized in Erlang\footnote{Therefore, it was required also the Erlang packages installation for compilation} language. Its main functionality is that it works as an instant messaging server that allows more than one poeple to communicate and participate in real time, based on typed text or not. Additionally, considering that is intended to be used by a web application as part of a communication tool, it was necessary to enable BOSH in our Ejabberd server configuration. HTTP is synchronous providing simple call and response methods, discordant to XMPP's asynchronous event based protocol. Therefore, BOSH\footnote{Bidirectional-streams Over Synchronous HTTP} is a protocol that provided us a method to use XMPP in our platform by making http requests with a long time-out.
+On the other hand, the set-up required an Ejabberd installation to manage instant messages in order to enable automatic non-typed communication between remote users and allow them to collaborate -suggest-. Ejabberd is a Jabber/XMPP\cite{wiki:xmpp}\footnote{\textit{'Extensible Messaging and Presence Protocol}, better known as XMPP (formerly Jabber), is an open and extensible XML-based protocol originally designed for instant messaging.'} server \cite{jia2010xmpp} which is realized in Erlang\footnote{Therefore, it was required also the Erlang packages installation for compilation} language. Its main functionality is that it works as an instant messaging server that allows more than one poeple to communicate and participate in real time, based on typed text or not. Additionally, considering that is intended to be used by a web application as part of a communication tool, it was necessary to enable BOSH\footnote{Bidirectional-streams Over Synchronous HTTP} in our Ejabberd server configuration. HTTP is synchronous providing simple call and response methods, discordant to XMPP's asynchronous event based protocol. Therefore, BOSH is a protocol that provided us a method to use XMPP in our platform by making http requests with a long time-out.
 
 After this preparation, the environment was therefore ready to start the implementation. 
 \subsection{Registration \& Login}
 
 The platform is intended to be used to test researches developed about recommendation strategies, therefore, it follows a user content based model. As explained in Section \ref{firstNScreen} issue \rom{1}), user preferences and explicit interaction should provide to the recommendation strategies an on-real-time update to re-rank the displayed personal suggestions. In order to deal with the volatile data it was decided to implement a Registration \& Login system. This way, it is possible to tack user preferences and provide relevant data to the recommendation side. 
 
-An important step before implementing the registration system was to study different types of registration which we could offer. Due to the imminent growth of the social networks popularity such as Facebook\footnote{https://www.facebook.com/} \cite{shih2009facebook}, websites are currently offering two different options to accomplish a registration:
+An important step before implementing the registration system was to study different types of registration we could offer. Due to the imminent growth of the social networks popularity such as Facebook\footnote{https://www.facebook.com/} \cite{shih2009facebook}, websites are currently offering two different options to accomplish a registration:
 
 \begin{itemize}
   	\item [-]\textit{Good registration}: known as the one where a user fills in directly the registration form with their personal data. 
 	\item [-]\textit{OpenID}: OpenID Registation is an extension to the OpenID\cite{w3c:openid}\footnote{'OpenID is an interoperable authentication protocol designed to be safe, faster and easier way to log in to web sites.'} Authentication protocol that allows for very light-weight profile (mostly social networks profile, as Facebook or Twitter\footnote{https://www.twitter.com/}) exchange . It is designed to pass eight commonly requested pieces of information when an end user goes to register a new account with a web service. 
-\end{itemize}\begin{figure}[!htb]
-\centering
-\epsfig{file=images/recommender_tasks.png, height=2in, width=1.5in}
-\caption{Recommender system tasks, obtained from \cite{libbyrecommender}}
-\label{fig:recomm}
-\end{figure}
+\end{itemize}
 
-The OpenID provides an even faster registration than before. This '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
+The OpenID provides the fastest registration system. This '1-click' activity can definitely be very attractive to implement as unique registration for a second screen platform\cite{allen2012smashing}, where users distraction has a crucial importance. But despite its significance through the last years, not every user is willing to share their social networks' personal profile due to a lack of confidence in such websites\cite{pu2006trust}. For this reason, we decided to include both in our platform, selecting the OpenID registration provided by Facebook, since this social network can offer valuable information for the recommendation system. 
 
 
 The implementation for registration \& login has been carried out making use of:
@@ -419,7 +414,7 @@ Table \texttt{content}. Column fields:
 \item \texttt{member\_id}: Primary key\footnote{The \textit{primary key} of a relational table uniquely identifies each record in the table.}
 \item \texttt{recommendations}: Personal recommendations list, JSON\footnote{\textit{'JSON} (JavaScript Object Notation) is a lightweight format that is used for data interchanging.'} format.
 \item \texttt{recently\_viewed}: Recently viewed or watched programmes personal list, JSON format.
-\item \texttt{watch\_later}: Watch Later personal list, JSON format.
+\item \texttt{watch\_later}: Watch later personal list, JSON format.
 \item \texttt{like\_dislike}: List containing personal likes and dislikes of the user, JSON format.
 \item \texttt{shared\_by\_friends}: List containing suggestions to the user made by members within his/her same group. 
 \end{itemize}
@@ -452,10 +447,6 @@ CREATE TABLE IF NOT EXISTS `content` (
     DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 \end{lstlisting}
 
-Picture whatever shows how the content is initialize for each user the very first moment during the registration. 
-
-****INCLUDE AN IMAGE OF THE DATABASE STRUCTURE BEING POSTED BY REGISTRATION******
-
 \subsubsection{Login Security}
 
 An important implementation to mention is that, in order to access to the personal webpage after the login action, a security checking has been implemented. The access to the welcome page containing personal user-based content is only possible if the login has been correctly done, case in which the authentication \texttt{SESSION VARIABLES}\cite{php:session}\footnote{'A\textit{Session Variable} is an associative array containing session variables available to the current script.'} are set and authenticated. 
@@ -477,13 +468,13 @@ if(!isset($_SESSION['SESS_MEMBER_ID'])
 ?>
 \end{lstlisting}
 
-In addition, for localhost testing purposes, it has been included a management of the browser cache to allow more than one sessions running simultaneously in the same browser.
+In addition, for localhost testing purposes, it has been included a management of the browser cache memory to allow more than one sessions running simultaneously in the same browser.
 
 \subsection{Interaction Activities}
 \subsubsection{Watch Later} \label{watchlater}
-It is severely important to understand how is the user behaviour when interacting with a web service. Developers and designers work together to deploy a final product, but sometimes users can present unpredictable conduct and wishes\cite{norman2002design}. It is only after realizing tests on final users when the success or failure can be declared. Notube N-Screen, for example, was designed to be a second screen recommendation platform to watch immediately a selected programme. But after a evaluation with real users they found out how some users where wishing to watch that successful recommended programme not immediately, but in another later moment. This result revealed a very interesting \textit{sequential usage} behaviour in which users utilize the same platform -and sometimes the same device- but in separated moments to accomplish a task, in this case, watch the desired programme. The platform therefore showed a general successful feedback, but was lacking an important user conduct that was not taking into account at the beginning. 
+It is severely important to understand how is the user behaviour when interacting with a web service. Developers and designers work together to deploy a final product, but sometimes users can present unpredictable conducts and wishes\cite{norman2002design}. It is only after realizing tests on final users when the success or failure can be declared. Notube N-Screen, for example, was designed to be a second screen recommendation platform to watch immediately a selected programme. But after a evaluationwith real users, as explained in \ref{firstNScreen} issue \rom{2}), they found out how some users where wishing to watch that successful recommended programme not immediately, but in another later moment. This result revealed a very interesting \textit{sequential usage} behaviour in which users utilize the same platform -and sometimes the same device- but in separated moments to accomplish a task, in this case, watch the desired programme. The platform therefore showed a general successful feedback, but was lacking an important user conduct that was not taking into account at the beginning. 
 
-Our simplest and effective solution to this situation\cite{krug2014don} has been the implementation of the possibility to add programmes to a personal '\textit{watch later}' list. This list is directly populated with the implicit user interaction of clicking a 'watch later' button. The list can be edited by the addition or removal of a programme. It is important to mention that each time the user edits this personal list, it is directly updated in the database making use of the PHP script \texttt{set\_channel.php}, which source code is as follows:
+Our simplest and effective solution to this situation\cite{krug2014don} has been the implementation of the possibility to add programmes to a personal '\textit{watch later}' list. This list is directly populated with the implicit user interaction clicking a 'watch later' button. The list can be edited by the addition or removal of a programme. It is important to mention that each time the user edits this personal list, it is directly updated in the database making use of the PHP script \texttt{set\_channel.php}, which source code is as follows:
 
 \begin{lstlisting}[language=json,firstnumber=1]
 <?php
@@ -514,28 +505,26 @@ Our simplest and effective solution to this situation\cite{krug2014don} has been
 ?>
 \end{lstlisting}
 
-****INCLUDE SCREENSHOT WATCH LATER ******
-
 \subsubsection{Like \& Dislike}
 As mentioned in Section \ref{firstNScreen} issue \rom{3}), we analysed Notube N-Screen and we found that the platform was missing interaction activities. The implementation of the Watch Later list explained in Section \ref{watchlater} is  actually an addition that improves this issue. Nevertheless, after a deep study we came to the result that just adding that feature was not enough. Based on the recommendation system that is going to be included afterwards, we converged to an idea to include the possibility to elicit user preferences by ranking a programme with a simple Like or Dislike action. 
 
-The idea came from the project developed by Vista-TV Sibyl\footnote{http://sibyl.prototyping.bbc.co.uk/}. Sibyl is a TV and radio programme recommender system designed for tablets and personal computers which uses a novel drag-and-drop system to extract user preferences. A user is able to express preferences by dragging individual programmes into 'like' and 'dislike' boxes. These preferences are immediately used by the client-side recommender to re-rank the programmes and refresh the recommendation list. Therefore, the implementation in N-Screen not only improves the user interaction, but also can be used to improve the recommendation strategy using directly relevant information provided by the user. 
+The idea came from the project developed by Vista-TV Sibyl\footnote{http://sibyl.prototyping.bbc.co.uk/}. Sibyl is a TV and radio programme recommender system designed for tablets and personal computers which uses a novel drag-and-drop system to extract user preferences. A user is able to express preferences by dragging individual programmes into 'like' and 'dislike' boxes. These preferences are immediately used by the client-side recommender to re-rank the programmes and refresh the recommendation list. Therefore, the implementation in N-Screen not only may improve the user interaction, but also can be used to upgrade the recommendation strategy using directly relevant information provided by the user. 
 
 As well as with the case of the Watch Later list, likes and dislikes are directly populated with the implicit user interaction of clicking a button; simultaneously updating the database with PHP script \texttt{set\_channel.php}. 
 
 \subsubsection{Hyperlink Metadata}
 
-In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} that is watch a programme, we decided to implement another more additional feature: Hyperlin\cite{wiki:hyper}\footnote{\textit{'Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.'} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to actor, director, genre and general metadata of a TV programme. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display only a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extraction.
+In order to keep improving the platform without distracting the user from the main purpose\cite{allen2012smashing} -watch a programme-, we decided to implement another more additional feature: Hyperlink\cite{wiki:hyper}\footnote{\textit{'Hyperlink} is a reference to data that the reader can directly follow either by clicking or by hovering or that is followed automatically.'} Metadata\footnote{\textit{Metadata}: data about data. It is descriptive information about a particular data set, object, or resource.}. Inside each selected programme description, we included the possibility to click hyperlink metadata to browse further information of this selected concept. The first idea was to add the possibility to include clickable actions to every general metadata of a TV programme as actor, director or genre. Unfortunately, it has been only possible to implement the hyperlink with 'tags'  due to content dataset restrictions - data explanation in Section \ref{data}-. For that reason it has been possible only to display a small part of the goal, but the implementation is developed to work successfully with other datasets that provide wider content extractions.
 
 \subsubsection{Random Selection}
-Nowadays, recommendation systems offer a manner to save time  exploring for the users between their preferences.
-This new service presents an almost universal acceptance due to its advantages\cite{bobadilla2013recommender}. Despite this, recommendation systems bound the user within his/her pre-defined preferences, not offering to the users to explore totally new content. For this reason, our last addition has been the implementation of the possibility to select a random selection of videos. The idea was motivated by \texttt{http://nscreen.notu.be/ted/}. This way, we can provide to the final users a way to explore non-related content with them, and therefore, offering the possibility to find new preferences. 
+Nowadays, recommendation systems offer a manner to save time  exploring for users between their preferences.
+This new service presents an almost universal acceptance due to its advantages\cite{bobadilla2013recommender}. Nevertheless, recommendation systems bound the user within his/her pre-defined preferences, not offering the opportunity to explore totally new content. For this reason, our last addition has been the implementation of the possibility to select a random selection of videos. The idea was motivated by \texttt{http://nscreen.notu.be/ted/}. This way, we can provide to final users a way to explore non-related content with them, and therefore, offering the possibility to find new preferences. 
 
 \subsection{Remote TV}
 
-Social activities through the Web are becoming exponentially popular since the web encourages users to  participate socially active without even moving from their rooms\cite{schopman2010notube}. On the other hand, TV remains a largely passive experience that usually requires physical presence to become social in terms of simultaneous experience sharing, i.e. if you want to watch the same programme al the same time with a friend, you usually meet together in order to do it. For this reason, one of the most innovative and attractive features included in Notube N-Screen was the possibility to share a cross-platform 'virtual TV' in which every person within a group can watch simultaneously the same. Watching TV with faraway friends through a virtual living room.
+Social activities through the Web are becoming exponentially popular since the web encourages users to  participate socially active without even moving from their rooms\cite{schopman2010notube}. On the other hand, TV remains a largely passive experience that usually requires physical presence to become social in terms of simultaneous experience sharing, i.e. if you want to watch the same programme at the same time with a friend, you usually meet together in order to do it. For this reason, one of the most innovative and attractive features included in Notube N-Screen was the possibility to share a cross-platform 'virtual TV' in which every person within a group can watch simultaneously the same. Watching TV with faraway friends through a virtual living room.
 
-Unfortunately, as explained in \ref{firstNScreen} issue \rom{4}), this last feature was not working because the programme visualization part was missing. We decided that it was necessary to resuscitate the virtual television in order to achieve a successful platform. After long time studying the source code \texttt{player.html}, the bug was found. The problem was mainly residing in data compatibility and how \texttt{player.html} handled this data to enable a visualization. Further details concerning data structure are explained in section \ref{data}. The following \texttt{player.html} section of code shows how we handled the issue, replacing the local '\textit{manifest}'\footnote{The \textit{manifest} provides relevant  metadata for a specific programme such as video-url and video-format} extraction for a \texttt{http-request} in order to retrieve the manifest, and therefore, fixing the problem. 
+Unfortunately, as explained in \ref{firstNScreen} issue \rom{4}), this last feature was not working because the programme visualization part was missing. We decided that it was necessary to resuscitate the virtual television in order to achieve a successful platform. After long time studying the source code of the script handling the remote TV \texttt{player.html}, the bug was found. The problem was mainly residing in data compatibility and how \texttt{player.html} handled this data to enable a visualization. Further details concerning data structure are explained in section \ref{data}. The following \texttt{player.html} section of code shows how we handled the issue, replacing the local '\textit{manifest}'\footnote{The \textit{manifest} provides relevant  metadata for a specific programme such as video-url and video-format} extraction for a \texttt{http-request} in order to retrieve it and correctly parse it, and therefore, fixing the problem. 
 \begin{lstlisting}[language=json,firstnumber=1]
 $(document).bind('tv_changed', function (e,item) {
   console.log(item);
@@ -586,9 +575,9 @@ $(document).bind('tv_changed', function (e,item) {
 \end{lstlisting}
 
 \subsection{Content Data} \label{data}
-This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\cite{wiki:bbc}\footnote{\textit{'British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.'} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data based on programmes' IDs including metadata extraction. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. These scripts have been programmed making use of Javascript\cite{w3c:ajax}\footnote{\textit{'Asynchronous JavaScript and XML} (AJAX) is the method of exchanging data with a server, and updating parts of a web page without reloading the entire page.'} AJAX in the client side, and PHP in the server side. This way, it is not needed to locally store testing datasets but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained at the same time the platform total weight is severely reduced, since it does not locally store any dataset. 
+This project presents a functional platform that can be used, between others, to test future recommendation strategies. One of the possibilities that are currently being researched in our Web \& Media Department \footnote{http://wm.cs.vu.nl/} is a recommendation system based on BBC\cite{wiki:bbc}\footnote{\textit{'British Broadcasting Corporation} (BBC) is a UK-based international public-service broadcaster head-quartered at Broadcasting House in London.'} programmes through the webpage \texttt{http://www.bbc.co.uk/programmes/}. As mentioned in section \ref{firstNScreen} issue \rom{5}), the Notube N-Screen structure was designed to work with locally stored data. This approach was inefficient since facing future data migrations or including heavier data would follow not only memory but also functional issues. Consequently, we decided to change how the platform deals with this. We converted it to a platform structure designed to deal with remotely stored data based on programmes' IDs including metadata extraction. In order to make this happen, a set of scripts to handle \texttt{http-requests}\footnote{ \textit{HTTP request/response} protocol, which means a client-side application sends a request for some file, and the web server sends back a response.} has been implemented. These scripts have been programmed making use of Javascript\cite{w3c:ajax}\footnote{\textit{'Asynchronous JavaScript and XML} (AJAX) is the method of exchanging data with a server, and updating parts of a web page without reloading the entire page.'} AJAX in the client side, and PHP in the server side. This way, it is not needed to locally store testing datasets but to provide to the scripts a suitable URL to extract information. As a result, the functionality speed is maintained while the platform total weight is severely reduced, since it does not locally store any dataset. 
 
-In addition, it has been taking into account the possible data structure that the recommendation system may use as input. For this purpose, a deep study of data structure compatibility has been conducted to facilitate as much a possible future implementations carried out by recommendation engines researchers. Based on various data extraction APIs\footnote{\textit{Application-Programming Interface}} such as the \textit{BBC Developers API}\footnote{https://developer.bbc.co.uk/} or the \textit{TED Talks Lab API}\footnote{http://developer.ted.com/API\_Docs}
+In addition, it has been taking into account the possible data structure that the recommendation system may use as input. For this purpose, a deep study of data structure compatibility has been conducted to facilitate, as much a possible, future implementations carried out by recommendation engines researchers. Based on various data extraction APIs\footnote{\textit{Application-Programming Interface}} such as the \textit{BBC Developers API}\footnote{https://developer.bbc.co.uk/} or the \textit{TED Talks Lab API}\footnote{http://developer.ted.com/API\_Docs}
 we decided to set up the following structure\footnote{Notice that it is a random example using a extracted TED Talks Video.} in \texttt{JSON} format for every object contained in our N-Screen, as programmes or videos:
 \begin{lstlisting}[language=json,firstnumber=1]
 {
@@ -731,7 +720,7 @@ function changeData(data){
 }
 \end{lstlisting}
 
-It is important to mention that in order to introduce an attractive platform to interact with, a complete data migration has been implemented. Due to its advantages and popularity we decided to implement the final demo making use of videos provided by TED Talks API\cite{cettolo2012wit3}.
+It is important to mention that in order to introduce an attractive demo of the platform, a complete data migration has been implemented. Due to its advantages and popularity we decided to implement the final demo making use of videos provided by TED Talks API\cite{cettolo2012wit3}.
 
 \subsection{Web Design}
 While building a web platform, it is important to design how to improve its functionality and also its graphical interface. A wide set of studies \cite{allen2012smashing} show how a not only well-built website, but also well-designed can increase its user traffic, due to an improved user enjoyment. Nowadays a aesthetic design 
@@ -745,7 +734,7 @@ Through previous subsections included in our Implementation Study, a list of sol
 \subsubsection{Home Page}
 Since the beginning of web pages, human-computer interaction has been an important factor concerning experience evaluations\cite{monk2004product}. Usability considerations played an important role and influence the way interactive systems are designed and developed\cite{green2003pleasure}. But determining user satisfaction, there have been a  fluctuation from functional fulfilment to how is the provided global experience\cite{de2006interaction}. How intuitive an interface is and how it looks is influencing the capability to engage users more than ever\cite{allen2012smashing}. Now users are demanding functionality, usability and aesthetics in order to generate affective responses. 
 
-For this reason, it is severely important trying to understand who are going to be the final users of an interactive service, where is it going to be used and how. Following this, we converge to a main aspect that the homepage demanded to accomplish due to its inherit second screen conduct: It needed to be easy to use in order to not distract the user from the main viewing experience, in our case, mostly in front of a TV; and at the same time meet aesthetic design to boost users engagement. We found that the homepage  was lacking first sight relevant information, therefore it required more attention than actually needed. Furthermore, its aesthetics could be improved. Figure \ref{fig:oldhomepage} shows a screenshot of Notube N-Screen homepage. This homepage was showing, during first sight view, the set of different channels 'Recommendations for you', 'Recently Viewed', 'Search Results' and 'Shared by friends', but without providing any further details about them. 
+For this reason, it is severely important trying to understand who are going to be the final users of an interactive service, where is it going to be used and how. Following this, we converge to a main aspect that the homepage demanded to accomplish, due to its inherit second screen conduct: It needed to be easy to use in order to not distract the user from the main viewing experience, in our case, mostly in front of a TV; and at the same time meet aesthetic design to boost users engagement. We found that the homepage  was lacking first sight relevant information, therefore it required more attention than actually needed. Furthermore, its aesthetics could be improved. Figure \ref{fig:oldhomepage} shows a screenshot of Notube N-Screen homepage. This homepage was showing, during first sight view, the set of different channels 'Recommendations for you', 'Recently Viewed', 'Search Results' and 'Shared by friends', but without providing any further details about them. 
 
 \begin{figure}[!htb]
 \centering
@@ -790,9 +779,9 @@ In addition, it has been implemented more design improvements concerning the hom
 \label{fig:roster}
 \end{figure}
 
-\subsubsection{Selected Programme}
+\subsubsection{Selected Programme Overlay}
 
-One of the most tedious parts during the design has been re-designing the visualization of a selected programme. During this phase, aesthetics and usability have been the most important factors. It has been included a vertical-right interactive bar next to the programme default image, see Figure \ref{fig:selectedprogramme}. This bar contains a set of five icons: Watch Later, Like, Dislike, Shared by Friends and Recently Viewed. It is important to mention that three of this icons -Watch Later, Like and Dislike- are call-to-action icons, which means that if the user clicks on one of them, the programme will be automatically added to the personal list which name is that precise icon. It is important to mention that if a programme is contained in one of the personal lists, the icon will be automatically rendered to be displayed in a different colour, as reminder for the user, see Figure \ref{fig:colouredicons}. 
+One of the most tedious parts during the design has been re-designing the visualization of a selected programme. During this phase, aesthetics and usability have been the most important factors. It has been included a vertical-right interactive bar next to the programme default image, see Figure \ref{fig:selectedprogramme}. This bar contains a set of five icons: Watch Later, Like, Dislike, Shared by Friends and Recently Viewed. It is important to mention that three of this icons -Watch Later, Like and Dislike- are call-to-action icons, which means that if the user clicks on one of them, the programme will be automatically added to the personal list which name is that precise icon. Moreover, if a programme is contained in one of the personal lists, the icon will be automatically rendered to be displayed in a different colour, as reminder for the user, see Figure \ref{fig:colouredicons}. 
 
 \begin{figure}[!htb]
 \centering
@@ -801,11 +790,22 @@ One of the most tedious parts during the design has been re-designing the visual
 \label{fig:selectedprogramme}
 \end{figure}
 
-\begin{figure}[!htb]
-\centering
-\epsfig{file=images/colouredicons.png, height=1in, width=0.5in}
-\caption{Example of Coloured Icons,New N-Screen}
-\label{fig:colouredicons}
+%\begin{figure}[!htb]
+%\centering
+%\epsfig{file=images/colouredicons.png, height=1in, width=0.5in}
+%\caption{Example of Coloured Icons,New N-Screen}
+%\label{fig:colouredicons}
+%\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    {\includegraphics[width=0.5in]{images/on_watch_later.png}} 
+    {\includegraphics[width=0.5in]{images/on_like.png}} 
+    {\includegraphics[width=0.5in]{images/on_dislike.png}} 
+    {\includegraphics[width=0.5in]{images/on_shared.png}} 
+    {\includegraphics[width=0.5in]{images/on_recently_viewed.png}} 
+    \caption{Designed Icons}
+    \label{fig:colouredicon}
 \end{figure}
 
 Additionally, it has been added below a programme description an inline set of hyperlinked tags extracted for the programme metadata, see Figure \ref{fig:tags}. A user can click to a desired tag to explore further related programmes. Figure \ref{fig:tagsclick} show the visualization of this action. 
@@ -827,8 +827,7 @@ Additionally, it has been added below a programme description an inline set of h
 At last, it has been included a clickable selection of related programmes below its summary, placed on the 'More Like This' section. 
 
 \section{Evaluation and Results}
-Initially, some tests were applied to the final platform for the purpose of proving its
-proper functionality. The main features that make the platform valuable such as
+Initially, some tests were applied to the final platform to prove its proper functionality. The main features that make the platform valuable such as
 registration, personal lists updating, sharing to a faraway user and remote TV have been tested. Afterwards, when the functionalities were demonstrated to work, an evaluation of the user experience has been carried out. The descriptions of
 the tests and corresponding results are exposed in this section.
 
@@ -852,7 +851,6 @@ This tests tried to prove that every functional part included in the source code
   	\item [-]Security
   	\item [-]User personal row in database members table
   	\item [-]User personal row in database content table
-  	\item [-]Database content table initialization
   	\item [-]Cache
   \end{itemize}
   \item Homepage 
@@ -902,6 +900,7 @@ This tests tried to prove that every functional part included in the source code
   	\item [-]Information displayed
   	\item [-]Local play
   	\item [-]Call-to-action icons
+  	\item [-]Non-call-to-action icons
   	\item [-]Tags
   	\item [-]More Like This
   \end{itemize}
@@ -912,14 +911,14 @@ This tests tried to prove that every functional part included in the source code
   \end{itemize}
 \end{itemize}
 
-After the test we ascertained that every part listed above was correctly working. 
+After the test, we ascertained that every part listed above was correctly working. 
 \subsection{User Experience Evaluation}
 To accomplish the success of our platform, it was necessary to consider testing its interface as 
 well. An interface is the intermediary between users and content. It guides them through different complexities found on an interactive web system. ''The happy marriage of architecture and interface--of logical structure and visual meaning--creates a cohesive user experience''\cite{fleming1998web}. 
 
 In order to test this important part of the platform, we carried out a user experience (UX) evaluation in order to extract how users feel during the interaction. For this purpose, we recruited 5 participants: three women and two man across a spread of ages between 20 and 31. All participants descriped themselves as screen devices enthusiasts, regulary spending at least 2 leisure hours a day in front of a screen. 
 
-Following some introductory context about our N-Screen in general, during each session we showed the participants our own version of N-Screen, containing a set of videos provided by TED Talks API, and we walked them through a group.watching scenario -with the author of this report taking the role of the participant's N-Screen 'friend'-. 
+Following some introductory context about our N-Screen, during each session we showed the participants our own version of N-Screen, containing a set of videos provided by TED Talks API, and we walked them through a group watching scenario -with the author of this report taking the role of the participant's N-Screen 'friend'-. 
 
 During the evaluation, we asked the participant to think out loud to extract their thoughts and feelings about our own N-Screen. The results of this evaluation are exposed in the following subsections. 
 
@@ -933,13 +932,13 @@ After registration, we required to every participant to sign in in order to test
 
 Each participant in an N-Screen group starts with a different set of personalised programme recommendations, and a set of empty personal lists -since they interaction just started-. We had to ask our participants to imagine these were based on their user profile. Despite this, all the participants liked the concept of seeing programme suggestions based on their own preferences.
 
-All participants showed an enthusiastic feedback about the homepage. The display of a short set of videos below each channel was for them very informative and non disturbing. 
+All participants showed an enthusiastic feedback about the homepage. The display of a short set of videos below each channel was for them very informative, easy and non-disturbing. 
 
 Additionally, tapping on a programme in our N-Screen displays an overlay with a brief programme synopsis with clickable tags, play button, a vertical bar containing call-to-action icons and a set of programmes related to the selected one. All participants showed a positive reaction to this overlay, considering it with the precise information needed. We asked the participants to try to interact with the programme overlay, and all of them found out easily that 'Watch Later', 'Like' and 'Dislike' buttons where clickable and concerned an updating of their personal lists, and also all of them realised that 'Shared by Friends' and 'Recently Viewed' were static buttons automatically rendered by the platform. It is important to mention that one of the participants realised that the Like and Dislike buttons were not exclusive, being possible to have both at the same time active. Concerning the hyperlink metadata, all participants figured out that they were also clickable and were appreciative about them, showing videos related to a specific tag was very useful for everyone.  In addition, the play button was intuitive for every participant.  
 
 It is important to mention that every participant except one exposed a comment without being asked about the random selection. They found this possibility definitely useful, since sometimes it is preferable to watch something totally non-related to own preferences and therefore find something new. 
 
-A special test that we carried out was to ask to every participant to go back to home page if they were out of it. Every participant found out by themselves that there was a clickable button placed in the footer with the word HOME that could drive them there. 
+A special test that we carried out was to ask to every participant to go back to the homepage if they were out of it. Every participant found out by themselves that there was a clickable button placed in the footer with the word HOME that could drive them there. 
 
 At last, one of the participants showed disappointment with the navigation on the home page, preferring to be horizontally static and just allowing to scroll vertically. 
 \subsubsection{Sharing \& Virtual TV}
@@ -948,15 +947,15 @@ During this phase of the test, we asked to all participants to share a program. 
 
 Additionally, any problem to open the Virtual TV and drag \& drop something to it was showed, this last one since the previous phase provided a hint to accomplish the TV sharing.
 
-All participants were very enthusiastic about the Virtual TV and found this featured extremely useful and innovative. ç
+All participants were very enthusiastic about the Virtual TV and found this featured extremely useful and innovative.
 
 \subsubsection{General Overview}
 
-At the end of the evaluation with every participant, we asked them how was their general feeling about the platform, how intuitive it was and also its aesthetic. Every participant shared a positive reaction after this questions, explaining that it was generally intuitive and also with a beautiful non disturbing minimalistic interface.  
+At the end of the evaluation with every participant, we asked them how was their general feeling about the platform, how intuitive it was and also its aesthetic. Every participant shared a positive reaction after this questions, explaining that it was very intuitive and with a beautiful minimalistic interface.  
 
 \subsubsection{Results}
 
-Overall, participants were complimentary about trying out our own version of N-Screen; they mostly liked it and found it fun and easy to use:
+Overall, participants were complimentary about trying out our own version of N-Screen; they enjoyed it and found it fun and easy to use:
 
 \begin{itemize}
 	\item The registration requirement was accepted for every participant but one. 
@@ -981,12 +980,28 @@ Moreover, some issues were found with a potential future improvement:
 As a result from the evaluation, we can conclude that our approach in order to improve the Notube N-Screen platform has been successful. Therefore our main goal has been accomplished. 
 \section{Conclusions}
 
-In this report, we are addressing the interactivity problem of recommender second screen apps. We developed an innovative browser-based platform based on Notube previous work and we tried to improve it including new features meanwhile providing a scalable software design to enable future recommendation strategies testing. 
+In this report, we are addressing the interactivity problem of recommender second screen platform. We developed an innovative browser-based platform based on Notube previous work and we tried to improve it including new features meanwhile providing a scalable software design to enable future recommendation strategies testing. 
 The main thrust of this project was to adapt the platform including new features in order to improve five main issues identified: the volatile treat of the explicit relevant data provided by users, the sequential usage of the second screen, the lack of interactive activities, the possibility to play a video both locally and through a virtual TV and an scalable software to enable future data content migrations. 
 
 The volatile data was settled by including a registration system in order to track user preferences. To deal with the sequential usage behaviour, an editable watch later list has been implemented. To offer a more attractive set of possible activities to interact with, explicitly provided feedback of programmes by like and dislike actions, hyperlink metadata to browse further and a random selection have been included. Both the locally and the remote watching have been successfully fixed and at last the platform has been designed to be fully adaptable to enable future content data migrations.  
 
 Our results extracted from the evaluation showed how every goal have been pleasantly accomplished. 
+
+\subsection{Future Lines}
+
+Regarding the future of the platform, it is important to pay attention to some points. These points have been considered as highly convenient in order to increase performance and obtaining a better experience.
+
+\begin{itemize}
+	\item Include the possibility to enter to the platform without requiring a formal registration. 
+	\item Improvement of the 'More like this' section, since it is based only in one tag.
+	\item Offer the possibility of user profile management.
+	\item Include the possibility to like or dislike metadata.
+	\item Include the possibility to select between different languages and subtitles when watching a programme.
+	\item Include an instant messaging chat.
+	\item Improvement of the responsive design in registration and selected programme overlays.
+	\item Smart-TV synchronization by the development of a Smart-TV app.
+\end{itemize}
+
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
@@ -995,7 +1010,7 @@ I am using this opportunity to express my gratitude to everyone who supported me
 
 I would also like to express my gratitude to my supervisor Lora Aroyo and my co-supervisor Valentina Maccatrozzo for the useful comments, remarks and engagement through the learning process of this master thesis. 
 
-I would also like mention special thanks to my brother, mother and father for all the received affection and support. At last but not least, I would like to express my sincere thanks to Agust\'in Tena for every single moment during the process of this project. 
+I would also like mention special thanks to my brother, mother and father for all the received affection and support. At last but not least, I would like to express my sincere thanks to Agust\'in Tena for his support and guidance during the process of this project. 
 
 %
 % The following two commands are all you need in the

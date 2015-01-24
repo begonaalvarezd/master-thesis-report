@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  23 JAN 2015 04:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.12.15)  25 JAN 2015 00:45
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -264,11 +264,7 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
-) (./sigproc-sp.aux
-
-LaTeX Warning: Label `fig:recomm' multiply defined.
-
-)
+) (./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -283,7 +279,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
- (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
 \scratchdimen=\dimen129
@@ -394,39 +391,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--347
  []
 
 [5 <./images/recommender_tasks.png (PNG copy)>]
-File: images/recommender_tasks.png Graphic file (type png)
-
-<use images/recommender_tasks.png> [6]
-Overfull \hbox (17.26859pt too wide) in paragraph at lines 413--414
+Overfull \hbox (17.26859pt too wide) in paragraph at lines 408--409
 []\T1/aett/m/n/9 facebook_id\T1/aer/m/n/9 : unique ID ex-tracted from Face-book
  OpenID. 
  []
 
-
-Overfull \hbox (17.26083pt too wide) in paragraph at lines 420--421
+[6]
+Overfull \hbox (17.26083pt too wide) in paragraph at lines 415--416
 []\T1/aett/m/n/9 recommendations\T1/aer/m/n/9 : Per-sonal rec-om-men-da-tions l
 ist, JSON[]
  []
 
 
-Overfull \hbox (3.39362pt too wide) in paragraph at lines 463--464
+Overfull \hbox (3.39362pt too wide) in paragraph at lines 454--455
 []\T1/aer/m/n/9 The fol-low-ing script (\T1/aett/m/n/9 auth.php\T1/aer/m/n/9 ) 
 shows this im-ple-men-ta-tion:[] 
  []
 
 
-Overfull \hbox (5.04707pt too wide) in paragraph at lines 480--481
-\T1/aer/m/n/9 than one ses-sions run-ning si-mul-ta-ne-ously in the same browse
-r. 
- []
-
-
-Overfull \hbox (3.39072pt too wide) in paragraph at lines 484--485
-\T1/aer/m/n/9 times users can present un-pre-dictable con-duct and wishes[30].
- []
-
-
-Overfull \hbox (4.50735pt too wide) in paragraph at lines 486--487
+Overfull \hbox (4.50735pt too wide) in paragraph at lines 477--478
 \T1/aer/m/n/9 been the im-ple-men-ta-tion of the pos-si-bil-ity to add pro-gram
 mes
  []
@@ -437,20 +420,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-<images/old_nscreen_homepahe.png, id=56, 1526.70375pt x 773.89125pt>
+
+<images/old_nscreen_homepahe.png, id=53, 1526.70375pt x 773.89125pt>
 File: images/old_nscreen_homepahe.png Graphic file (type png)
 
 <use images/old_nscreen_homepahe.png>
-Overfull \hbox (12.94356pt too wide) in paragraph at lines 752--753
+Overfull \hbox (12.94356pt too wide) in paragraph at lines 741--742
  [][] 
  []
 
-<images/new_homepage.png, id=57, 1539.7525pt x 769.87625pt>
+[11] <images/new_homepage.png, id=57, 1539.7525pt x 769.87625pt>
 File: images/new_homepage.png Graphic file (type png)
 
 <use images/new_homepage.png>
-Overfull \hbox (12.94395pt too wide) in paragraph at lines 761--762
+Overfull \hbox (12.94395pt too wide) in paragraph at lines 750--751
  [][] 
  []
 
@@ -458,7 +441,7 @@ Overfull \hbox (12.94395pt too wide) in paragraph at lines 761--762
 File: images/view_all_possibility_zoom.png Graphic file (type png)
 
 <use images/view_all_possibility_zoom.png>
-Overfull \hbox (12.94449pt too wide) in paragraph at lines 770--771
+Overfull \hbox (12.94449pt too wide) in paragraph at lines 759--760
  [][] 
  []
 
@@ -466,16 +449,20 @@ Overfull \hbox (12.94449pt too wide) in paragraph at lines 770--771
 File: images/viewallclick.png Graphic file (type png)
 
 <use images/viewallclick.png>
-Overfull \hbox (12.94052pt too wide) in paragraph at lines 777--778
+Overfull \hbox (12.94052pt too wide) in paragraph at lines 766--767
  [][] 
  []
 
 <images/roster.png, id=60, 245.91875pt x 256.96pt>
 File: images/roster.png Graphic file (type png)
  <use images/roster.png>
-Underfull \hbox (badness 1838) in paragraph at lines 789--789
-[]\T1/aer/bx/n/9 Figure 11: Im-ages Re-design in Vertical-Right
+Underfull \hbox (badness 1838) in paragraph at lines 778--778
+[]\T1/aer/bx/n/9 Figure 10: Im-ages Re-design in Vertical-Right
  []
+
+
+LaTeX Warning: Reference `fig:colouredicons' on page \thepage  undefined on inp
+ut line 784.
 
 [12 <./images/old_nscreen_homepahe.png> <./images/new_homepage.png (PNG copy)> 
 <./images/view_all_possibility_zoom.png (PNG copy)> <./images/viewallclick.png 
@@ -484,18 +471,33 @@ Underfull \hbox (badness 1838) in paragraph at lines 789--789
 File: images/selected_programme.png Graphic file (type png)
 
 <use images/selected_programme.png>
-Overfull \hbox (12.93555pt too wide) in paragraph at lines 799--800
+Overfull \hbox (12.93555pt too wide) in paragraph at lines 788--789
  [][] 
  []
 
-<images/colouredicons.png, id=66, 161.60374pt x 383.4325pt>
-File: images/colouredicons.png Graphic file (type png)
+<images/on_watch_later.png, id=66, 453.695pt x 453.695pt>
+File: images/on_watch_later.png Graphic file (type png)
 
-<use images/colouredicons.png>
-<images/tags.png, id=67, 451.6875pt x 54.2025pt>
+<use images/on_watch_later.png>
+<images/on_like.png, id=67, 453.695pt x 453.695pt>
+File: images/on_like.png Graphic file (type png)
+ <use images/on_like.png>
+<images/on_dislike.png, id=68, 453.695pt x 453.695pt>
+File: images/on_dislike.png Graphic file (type png)
+
+<use images/on_dislike.png>
+<images/on_shared.png, id=69, 453.695pt x 453.695pt>
+File: images/on_shared.png Graphic file (type png)
+
+<use images/on_shared.png>
+<images/on_recently_viewed.png, id=70, 453.695pt x 453.695pt>
+File: images/on_recently_viewed.png Graphic file (type png)
+
+<use images/on_recently_viewed.png>
+<images/tags.png, id=71, 451.6875pt x 54.2025pt>
 File: images/tags.png Graphic file (type png)
  <use images/tags.png>
-<images/tagsclick.png, id=68, 1222.5675pt x 625.33624pt>
+<images/tagsclick.png, id=72, 1222.5675pt x 625.33624pt>
 File: images/tagsclick.png Graphic file (type png)
 
 <use images/tagsclick.png>
@@ -503,118 +505,125 @@ Overfull \hbox (12.94116pt too wide) in paragraph at lines 822--823
  [][] 
  []
 
-[13 <./images/selected_programme.png (PNG copy)> <./images/colouredicons.png (P
-NG copy)> <./images/tags.png (PNG copy)> <./images/tagsclick.png (PNG copy)>]
+[13 <./images/selected_programme.png (PNG copy)> <./images/on_watch_later.png> 
+<./images/on_like.png> <./images/on_dislike.png> <./images/on_shared.png> <./im
+ages/on_recently_viewed.png> <./images/tags.png (PNG copy)> <./images/tagsclick
+.png (PNG copy)>]
+Overfull \hbox (12.9833pt too wide) in paragraph at lines 935--936
+\T1/aer/m/n/9 chan-nel was for them very in-for-ma-tive, easy and non-disturbin
+g. 
+ []
+
 [14] [15] (./sigproc-sp.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16])
 [17
 
-] <images/apendix/registration.png, id=85, 1525.7pt x 771.88374pt>
+] <images/apendix/registration.png, id=94, 1525.7pt x 771.88374pt>
 File: images/apendix/registration.png Graphic file (type png)
 
 <use images/apendix/registration.png>
-<images/apendix/login.png, id=86, 1525.7pt x 772.8875pt>
+<images/apendix/login.png, id=95, 1525.7pt x 772.8875pt>
 File: images/apendix/login.png Graphic file (type png)
 
 <use images/apendix/login.png>
-<images/apendix/homepage.png, id=87, 1540.75626pt x 772.8875pt>
+<images/apendix/homepage.png, id=96, 1540.75626pt x 772.8875pt>
 File: images/apendix/homepage.png Graphic file (type png)
 
 <use images/apendix/homepage.png>
-<images/apendix/homepage2.png, id=88, 1539.7525pt x 771.88374pt>
+<images/apendix/homepage2.png, id=97, 1539.7525pt x 771.88374pt>
 File: images/apendix/homepage2.png Graphic file (type png)
 
 <use images/apendix/homepage2.png>
-<images/apendix/homepage3.png, id=89, 1540.75626pt x 771.88374pt>
+<images/apendix/homepage3.png, id=98, 1540.75626pt x 771.88374pt>
 File: images/apendix/homepage3.png Graphic file (type png)
 
 <use images/apendix/homepage3.png>
-<images/apendix/programme.png, id=90, 1527.7075pt x 771.88374pt>
+<images/apendix/programme.png, id=99, 1527.7075pt x 771.88374pt>
 File: images/apendix/programme.png Graphic file (type png)
 
 <use images/apendix/programme.png>
-<images/apendix/localplay.png, id=91, 1534.73375pt x 770.88pt>
+<images/apendix/localplay.png, id=100, 1534.73375pt x 770.88pt>
 File: images/apendix/localplay.png Graphic file (type png)
 
 <use images/apendix/localplay.png>
-<images/apendix/tag.png, id=92, 1524.69624pt x 770.88pt>
+<images/apendix/tag.png, id=101, 1524.69624pt x 770.88pt>
 File: images/apendix/tag.png Graphic file (type png)
 
 <use images/apendix/tag.png>
-<images/apendix/more.png, id=93, 1539.7525pt x 772.8875pt>
+<images/apendix/more.png, id=102, 1539.7525pt x 772.8875pt>
 File: images/apendix/more.png Graphic file (type png)
 
 <use images/apendix/more.png>
-<images/apendix/all1.png, id=94, 1537.745pt x 775.89874pt>
+<images/apendix/all1.png, id=103, 1537.745pt x 775.89874pt>
 File: images/apendix/all1.png Graphic file (type png)
 
 <use images/apendix/all1.png>
-<images/apendix/all2.png, id=95, 1535.7375pt x 773.89125pt>
+<images/apendix/all2.png, id=104, 1535.7375pt x 773.89125pt>
 File: images/apendix/all2.png Graphic file (type png)
 
 <use images/apendix/all2.png>
-<images/apendix/all3.png, id=96, 1538.74875pt x 774.895pt>
+<images/apendix/all3.png, id=105, 1538.74875pt x 774.895pt>
 File: images/apendix/all3.png Graphic file (type png)
 
 <use images/apendix/all3.png>
-<images/apendix/all4.png, id=97, 1539.7525pt x 774.895pt>
+<images/apendix/all4.png, id=106, 1539.7525pt x 774.895pt>
 File: images/apendix/all4.png Graphic file (type png)
 
 <use images/apendix/all4.png>
-<images/apendix/all5.png, id=98, 1538.74875pt x 775.89874pt>
+<images/apendix/all5.png, id=107, 1538.74875pt x 775.89874pt>
 File: images/apendix/all5.png Graphic file (type png)
 
 <use images/apendix/all5.png>
-<images/apendix/all6.png, id=99, 1538.74875pt x 771.88374pt>
+<images/apendix/all6.png, id=108, 1538.74875pt x 771.88374pt>
 File: images/apendix/all6.png Graphic file (type png)
 
 <use images/apendix/all6.png>
-<images/apendix/random.png, id=100, 1540.75626pt x 773.89125pt>
+<images/apendix/random.png, id=109, 1540.75626pt x 773.89125pt>
 File: images/apendix/random.png Graphic file (type png)
 
 <use images/apendix/random.png>
-<images/apendix/sharing1.png, id=101, 1542.76375pt x 774.895pt>
+<images/apendix/sharing1.png, id=110, 1542.76375pt x 774.895pt>
 File: images/apendix/sharing1.png Graphic file (type png)
 
 <use images/apendix/sharing1.png>
-<images/apendix/sharing2.png, id=102, 1538.74875pt x 769.87625pt>
+<images/apendix/sharing2.png, id=111, 1538.74875pt x 769.87625pt>
 File: images/apendix/sharing2.png Graphic file (type png)
 
 <use images/apendix/sharing2.png>
-<images/apendix/notifications.png, id=103, 1538.74875pt x 768.8725pt>
+<images/apendix/notifications.png, id=112, 1538.74875pt x 768.8725pt>
 File: images/apendix/notifications.png Graphic file (type png)
 
 <use images/apendix/notifications.png>
-<images/apendix/homepagevirtual.png, id=104, 1539.7525pt x 770.88pt>
+<images/apendix/homepagevirtual.png, id=113, 1539.7525pt x 770.88pt>
 File: images/apendix/homepagevirtual.png Graphic file (type png)
 
 <use images/apendix/homepagevirtual.png>
-<images/apendix/sharing3.png, id=105, 1539.7525pt x 776.9025pt>
+<images/apendix/sharing3.png, id=114, 1539.7525pt x 776.9025pt>
 File: images/apendix/sharing3.png Graphic file (type png)
 
 <use images/apendix/sharing3.png>
-<images/apendix/player.png, id=106, 1537.745pt x 771.88374pt>
+<images/apendix/player.png, id=115, 1537.745pt x 771.88374pt>
 File: images/apendix/player.png Graphic file (type png)
 
 <use images/apendix/player.png>
-<images/apendix/player2.png, id=107, 1517.67pt x 768.8725pt>
+<images/apendix/player2.png, id=116, 1517.67pt x 768.8725pt>
 File: images/apendix/player2.png Graphic file (type png)
 
 <use images/apendix/player2.png>
-<images/apendix/player3.png, id=108, 1517.67pt x 763.85374pt>
+<images/apendix/player3.png, id=117, 1517.67pt x 763.85374pt>
 File: images/apendix/player3.png Graphic file (type png)
 
 <use images/apendix/player3.png>
-<images/apendix/homepageplaying.png, id=109, 1539.7525pt x 770.88pt>
+<images/apendix/homepageplaying.png, id=118, 1539.7525pt x 770.88pt>
 File: images/apendix/homepageplaying.png Graphic file (type png)
 
 <use images/apendix/homepageplaying.png>
 File: images/apendix/homepageplaying.png Graphic file (type png)
 
 <use images/apendix/homepageplaying.png>
-<images/apendix/homepagenotifplayer.png, id=110, 1539.7525pt x 772.8875pt>
+<images/apendix/homepagenotifplayer.png, id=119, 1539.7525pt x 772.8875pt>
 File: images/apendix/homepagenotifplayer.png Graphic file (type png)
 
 <use images/apendix/homepagenotifplayer.png> [18
@@ -636,17 +645,17 @@ es/apendix/player.png (PNG copy)> <./images/apendix/player2.png (PNG copy)>] [3
 ng (PNG copy)>] [31 <./images/apendix/homepagenotifplayer.png (PNG copy)>] [32]
  (./sigproc-sp.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5222 strings out of 495061
- 67325 string characters out of 1182620
- 754219 words of memory out of 3000000
- 8276 multiletter control sequences out of 15000+50000
+ 5243 strings out of 495061
+ 67836 string characters out of 1182620
+ 746219 words of memory out of 3000000
+ 8293 multiletter control sequences out of 15000+50000
  54759 words of font info for 74 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,11n,40p,1918b,1538s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,11n,40p,1907b,1538s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fonts/type1/public
@@ -657,9 +666,9 @@ mf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
 lvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (32 pages, 17632529 bytes).
+Output written on sigproc-sp.pdf (32 pages, 17651148 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
